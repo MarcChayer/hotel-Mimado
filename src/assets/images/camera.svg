@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Calque_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 168.837 135.818"
+	 enable-background="new 0 0 168.837 135.818" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="135.818" width="168.837" x="507.248" y="-530.687"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	
+		<rect x="33.961" y="26.486" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -20.038 80.4846)" fill="#E6E9EF" width="106.347" height="75.89"/>
+	
+		<rect x="41.974" y="33.937" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -20.0333 80.4971)" fill="#587C9A" width="90.355" height="60.988"/>
+	
+		<rect x="50.432" y="37.316" transform="matrix(0.8437 -0.5368 0.5368 0.8437 -24.2075 67.3736)" fill="#E6E9EF" width="106.347" height="75.89"/>
+	
+		<rect x="58.444" y="44.772" transform="matrix(0.8437 -0.5368 0.5368 0.8437 -24.2072 67.3833)" fill="#587C9A" width="90.355" height="60.988"/>
+	<path fill="#334B5E" d="M31.33,32.168h-15.92c-0.436,0-0.8,0.363-0.8,0.8v7.088c0,0.436,0.363,0.8,0.8,0.8h15.92
+		c0.436,0,0.8-0.363,0.8-0.8v-7.088C32.166,32.532,31.767,32.168,31.33,32.168z"/>
+	<path fill="#DCEDFB" d="M123.904,122.598H1.527c-0.836,0-1.49-0.654-1.49-1.49V40.419c0-0.836,0.654-1.49,1.49-1.49h122.414
+		c0.836,0,1.49,0.654,1.49,1.49v80.652C125.431,121.907,124.74,122.598,123.904,122.598z"/>
+	<rect y="56.12" fill="#334B5E" width="125.395" height="56.737"/>
+	<circle fill="#2B3B4E" cx="62.734" cy="80.763" r="34.129"/>
+	<circle fill="#E6E9EF" cx="62.734" cy="80.763" r="27.441"/>
+	<circle fill="#8CD2F6" cx="62.734" cy="80.763" r="21.989"/>
+	<circle fill="#56C1EC" cx="62.734" cy="80.763" r="10.468"/>
+	
+		<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -35.8815 60.5002)" fill="#FFFFFF" cx="55.089" cy="73.563" rx="4.434" ry="3.417"/>
+	<circle fill="#FFFFFF" cx="23.08" cy="66.297" r="3.308"/>
+	<rect x="94.682" y="43.436" fill="#8CD2F6" width="17.846" height="8.251"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

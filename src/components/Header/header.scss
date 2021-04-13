@@ -1,0 +1,149 @@
+@use 'src/styles/vars';
+
+@keyframes animBurger {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  };
+  100% {
+    transform: translateY(0vh);
+    opacity: 1;
+  };
+};
+
+@keyframes animBurgerHidden {
+  0% {
+    transform: translateY(0vh);
+    opacity: 1;
+  };
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  };
+};
+
+// burger animation
+.burger {
+  display:none; 
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  position: fixed;
+  right: 2em;
+  top: 2em;
+  z-index: 98;
+};
+
+.burger span {
+  display :block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  transition: background-color 0.5s ease-in-out;
+};
+
+.burger span::before, .burger span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+};
+
+.burger span::before {
+  transform: translateY(-10px);
+};
+
+.burger span::after {
+  transform: translateY(10px);
+};
+
+
+.burger.active span {
+  background-color: transparent;
+};
+
+.burger.active span::before {
+  transform: translateY(0px) rotate(45deg);
+  
+};
+
+.burger.active span::after {
+  transform: translateY(0px) rotate(-45deg);
+};
+
+// nav 
+
+.header {
+  height: 6em;
+  background-color: vars.$primary-color;
+};
+
+.navlinkMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: vars.$primary-color;
+  height: 100vh;
+  width: 100vw;
+  animation: animBurger 2s;
+  &__hidden {
+    display: none;
+  };
+  &__one {
+    font-family: 'SourceSansPro-SemiBold';
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid red;
+    margin: 2em;
+    width: 100%;
+    &--active {
+      color: vars.$secondary-color-light;
+    };
+  };
+};
+
+.navlinkDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: vars.$primary-color;
+  height: 6em;
+  border: 1px solid red;
+  
+  &__hidden {
+    display: none;
+  };
+  &__one {
+    font-family: 'SourceSansPro-SemiBold';
+    text-transform: uppercase;
+    color: white;
+    margin: 2em;
+    width: 100%;
+    &--active {
+      color: vars.$secondary-color-light;
+    };
+  };
+};
+
+@media screen and (max-width:1200px) {
+  .burger {
+    display:block; 
+  };
+  .navlinkDesktop {
+    display: none;
+  };
+};
+
+@media screen and (min-width:1200px) {
+  .navlinkMobile {
+    display:none; 
+  };
+};
