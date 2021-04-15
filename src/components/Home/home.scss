@@ -1,0 +1,42 @@
+@use 'src/styles/vars';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('../../assets/images/fondPlage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  &__firstTitle {
+    // border: 1px solid red;
+    font-family: 'Lora-Regular';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);  
+  };
+  &__secondText {
+    font-size: .8rem;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  };
+};
+
+@media screen and (min-width:1200px) {
+  .firstContainer {
+    &__firstTitle {
+      font-size: 3rem;
+    };
+    &__secondText {
+      font-size: 1.8rem;
+    };
+  };
+}

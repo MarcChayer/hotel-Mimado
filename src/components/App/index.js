@@ -24,23 +24,28 @@ const App = () => (
   <div className="app">
     <Router>
       <Switch> 
-        <Header />
         <Route exact path="/">
+          <Header />
           <Home />
         </Route>
         <Route exact path="/hebergement">
+          <Header />
           <Hebergement />
         </Route>
         <Route exact path="/restauration">
+          <Header />
           <Restauration />
         </Route>
         <Route exact path="/prestation">
+          <Header />
           <Prestation />
         </Route>
         <Route exact path="/activites">
+          <Header />
           <Activites />
         </Route>
         <Route exact path="/contact">
+          <Header />
           <Contact />
         </Route>
         <Footer />

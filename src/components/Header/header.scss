@@ -6,7 +6,7 @@
     opacity: 0;
   };
   100% {
-    transform: translateY(0vh);
+    transform: translateY(-100vh);
     opacity: 1;
   };
 };
@@ -81,7 +81,23 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+};
+
+.header--onHome {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  background-color: transparent;
+};
+
+.header--other {
+  display: flex;
+  justify-content: center;
   align-items: center;
   padding: 1.5em;
   background-color: vars.$primary-color;
@@ -99,7 +115,6 @@
     height: 100vh;
     width: 100vw;
     background-color: vars.$primary-color;
-    animation: animBurger 2s;
   };
   &__desktop {
     display: none;
@@ -111,12 +126,17 @@
     &--active {
       color: vars.$secondary-color-light;
     };
+    &:hover {
+      color: vars.$secondary-color-light;
+      transition: 1s;
+    };
   };
 };
 
 .logoMimado {
   width: 225px;
-}
+};
+
 @media screen and (max-width:1200px) {
   .burger {
     display:block; 
@@ -124,6 +144,31 @@
 };
 
 @media screen and (min-width:1200px) {
+  .header {
+    justify-content: space-between;
+    position: absolute;
+    background-color: transparent;
+    width: 100vw;
+  };
+
+  .header--onHome {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    background-color: transparent;
+    width: 100vw;
+  };
+  
+  .header--other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    background-color: vars.$primary-color;
+  };
+
   .navlink {
     &__mobile {
       display: none
@@ -131,7 +176,6 @@
     &__desktop {
       display: flex;
       justify-content: flex-end;
-      background-color: vars.$primary-color;
     };
     &__one {
       font-family: 'SourceSansPro-SemiBold';
@@ -141,11 +185,17 @@
       &--active {
         color: vars.$secondary-color-light;
       };
+      &:hover {
+        color: vars.$secondary-color-light;
+        transition: 1s;
+      };
     };
   };
+
   li:last-child {
     margin-right: 0;
   };
+
   .burger {
     display:none; 
   };

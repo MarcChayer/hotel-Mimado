@@ -1,6 +1,9 @@
 // == Import npm
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import {
+  NavLink,
+  useLocation
+} from 'react-router-dom';
 
 // == Import
 import './header.scss';
@@ -8,6 +11,16 @@ import mimado from '../../assets/images/mimado.svg';
 
 // == Composant
 const Header = () => { 
+  const location = useLocation();
+  // const divNavBar = {
+  //   backgroundColor: 'transparent',
+  //   position: 'absolute',
+  //   WebkitTransition: 'all', 
+  //   msTransition: 'all',
+  // };
+
+
+
   const [showBurgerMenu, setShowBurgerMenu] = React.useState(false)
 
   const handleOnClickToggleBurger = () => {
@@ -22,8 +35,13 @@ const Header = () => {
     setShowBurgerMenu(false);
   }
 
+  // if (location.pathname === '/') {
+  //   const navBar = document.querySelector('.header');
+  //   navBar += 'headerHome';
+  // };
+
   return (
-    <div className="header">
+    <div className={`header${location.pathname === '/' ? '--onHome' : '--other'}`}>
       <div className="burger" onClick={handleOnClickToggleBurger}>
         <span></span>
       </div>
