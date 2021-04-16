@@ -19,13 +19,15 @@ const Header = () => {
     const burger = document.querySelector('.burger');
     burger.classList.toggle('active');
     setShowBurgerMenu(!showBurgerMenu);
-  }
+  };
 
   const handleOnClickCloseMenu = () => {
-    const burger = document.querySelector('.active');
+    const burger = document.querySelector('.burger');
     burger.classList.remove('active');
+    // const navMobile = document.querySelector('.navlink__mobile');
+    // navMobile.classList.add('moveTop');
     setShowBurgerMenu(false);
-  }
+  };
 
   return (
     // en fonction de l'url on va venir ajouter des classes scss

@@ -2,7 +2,6 @@
 @use 'vars';
 
 body {
-  overflow: hidden;
 }
 
 @font-face {
@@ -18,6 +17,11 @@ body {
 @font-face {
   font-family: 'SourceSansPro-SemiBold';
   src: url('../assets/fonts/SourceSansPro-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'SourceSansPro-SemiBoldItalic';
+  src: url('../assets/fonts/SourceSansPro-SemiBoldItalic.ttf');
 }
 
 @font-face {
