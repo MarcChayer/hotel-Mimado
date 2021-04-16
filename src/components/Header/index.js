@@ -12,14 +12,6 @@ import mimado from '../../assets/images/mimado.svg';
 // == Composant
 const Header = () => { 
   const location = useLocation();
-  // const divNavBar = {
-  //   backgroundColor: 'transparent',
-  //   position: 'absolute',
-  //   WebkitTransition: 'all', 
-  //   msTransition: 'all',
-  // };
-
-
 
   const [showBurgerMenu, setShowBurgerMenu] = React.useState(false)
 
@@ -35,12 +27,8 @@ const Header = () => {
     setShowBurgerMenu(false);
   }
 
-  // if (location.pathname === '/') {
-  //   const navBar = document.querySelector('.header');
-  //   navBar += 'headerHome';
-  // };
-
   return (
+    // en fonction de l'url on va venir ajouter des classes scss
     <div className={`header${location.pathname === '/' ? '--onHome' : '--other'}`}>
       <div className="burger" onClick={handleOnClickToggleBurger}>
         <span></span>

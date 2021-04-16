@@ -21,22 +21,37 @@
     // border: 1px solid red;
     font-family: 'Lora-Regular';
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);  
   };
   &__secondText {
-    font-size: .8rem;
+    font-size: 1.1rem;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
   };
 };
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:800px) {
   .firstContainer {
     &__firstTitle {
-      font-size: 3rem;
+      font-size: 2.8rem;
     };
     &__secondText {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
+    };
+  };
+}
+
+@media screen and (max-width:414px) {
+  .firstContainer {
+    &__firstTitle {
+      font-size: 2rem;
+      margin: 0 1.2em 0 1.2em;
+      text-align: left
+    };
+    &__secondText {
+      font-size: 1rem;
+      margin: 0 2.2em 0 2.2em;
+      text-align: left
     };
   };
 }
