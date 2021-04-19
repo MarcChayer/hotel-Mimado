@@ -34,7 +34,9 @@ const Home = () => (
       <p className="secondText">Venez découvrir notre région sous un autre angle.</p>
     </section>
     <section className="secondContainer">
-      <img className="feuilleBananier" src={feuilleBananier} alt="image de fond"/>
+      <div className="maskLeafBananier">
+        <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
+      </div>
       <div className="cardsHome">
         <NavLink exact to="/hebergement" className="cardHome">
           <div className="cardLogo"><img src={lit} alt="icone hôtellerie"/></div>
