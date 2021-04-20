@@ -19,8 +19,13 @@ import wifi from '../../assets/images/logoWifi.svg';
 
 // == Import images slideshows
 import photo1 from '../../assets/images/accueil/bloc1/accueil1.jpg'; 
-import photo2 from '../../assets/images/accueil/bloc1/accueil5.jpg';
-import photo3 from '../../assets/images/accueil/bloc1/IQBD3892.jpg';
+import photo2 from '../../assets/images/accueil/bloc1/accueil2.jpg';
+import photo3 from '../../assets/images/accueil/bloc1/accueil3.jpg';
+
+import photo4 from '../../assets/images/accueil/bloc2/accueil4.jpg'; 
+import photo5 from '../../assets/images/accueil/bloc2/accueil5.jpg';
+import photo6 from '../../assets/images/accueil/bloc2/accueil6.jpg';
+
 
 const proprietes = {
   duration: 5000,
@@ -128,17 +133,17 @@ const Home = () => (
             <Fade {...proprietes}>
               <div className="each-slide">
                 <div>
-                  <img className="slideImage" src={photo1} alt="Plage de l'hôtel"/>
+                  <img className="slideImage" src={photo4} alt="Plage de l'hôtel"/>
                 </div>
               </div>
               <div className="each-slide">
                 <div>
-                  <img className="slideImage" src={photo2} alt="Photo de l'hôtel"/>
+                  <img className="slideImage" src={photo5} alt="Photo du restaurant en bord de plage."/>
                 </div>
               </div>
               <div className="each-slide">
                 <div>
-                  <img className="slideImage" src={photo3} alt="Photo aérienne de l'hôtel"/>
+                  <img className="slideImage" src={photo6} alt="Photo de la plage et du restaurant."/>
                 </div>
               </div>
             </Fade>

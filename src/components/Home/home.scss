@@ -40,9 +40,9 @@
       z-index: -5;
       .leafBananier {
         position: absolute;
-        width: 100%;
-        top: -80px;
-        right: -80px;
+        width: 30rem;
+        top: -90px;
+        right: -60px;
         z-index: -1;
       }
     }
@@ -61,19 +61,19 @@
         align-items: center;
         background-color: vars.$secondary-color-dark;
         border-radius: 2vh;
-        width: 15em;
-        height: 11em;
+        width: 13em;
+        height: 9em;
         .cardLogo {
           position: absolute;
-          top: -65px;
-          width: 60%;
+          top: -60px;
+          width: 8em;
         }
       }
       .textCard {
         font-family: 'SourceSansPro-SemiBoldItalic';
         text-align: center;
         color: white;
-        font-size: 1.8em;
+        font-size: 1.5em;
         padding: 1.2em;
       }
     }
@@ -261,15 +261,17 @@
       .maskLeafBananier {
         z-index: -1;
         .leafBananier {
-          width: 50%;
+          width: 40rem;
+          top: -100px;
+          right: -80px;
         }
       }
       .cardsHome {
         display:flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: 0;
-        width: 80%;
+        width: 100%;
         .cardHome {
           position: relative;
           top: -135px;
@@ -279,18 +281,19 @@
           align-items: center;
           background-color: vars.$secondary-color-dark;
           border-radius: 2vh;
-          min-width: 15em;
+          min-width:13em;
+          height: 9em;
           .cardLogo {
             position: absolute;
-            top: -65px;
-            width: 60%;
+            top: -60px;
+            width: 8em;
           }
         }
         .textCard {
           font-family: 'SourceSansPro-SemiBoldItalic';
           text-align: center;
           color: white;
-          font-size: 1.8em;
+          font-size: 1.5em;
           padding: 1.2em;
         }
       }
