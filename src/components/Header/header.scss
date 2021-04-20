@@ -135,10 +135,10 @@
     text-transform: uppercase;
     color: white;
     &--active {
-      color: vars.$secondary-color-light;
+      color: vars.$secondary-color-dark;
     }
     &:hover {
-      color: vars.$secondary-color-light;
+      color: vars.$secondary-color-dark;
       transition: 1s;
     }
   }
@@ -191,10 +191,10 @@
       color: white;
       margin: 0 1.5em 0 1.5em;
       &--active {
-        color: vars.$secondary-color-light;
+        color: vars.$secondary-color-dark;
       }
       &:hover {
-        color: vars.$secondary-color-light;
+        color: vars.$secondary-color-dark;
         transition: 1s;
       }
     }

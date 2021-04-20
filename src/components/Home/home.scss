@@ -3,6 +3,7 @@
 .home {
   display: flex;
   flex-direction: column;
+  // PREMIER CONTAINER
   .firstContainer {
     display: flex;
     flex-direction: column;
@@ -25,7 +26,7 @@
       text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     }
   }
-  
+  // SECOND CONTAINER
   .secondContainer {
     display:flex;
     flex-direction: column;
@@ -36,6 +37,7 @@
       overflow: hidden;
       width: 100%;
       height: 100%;
+      z-index: -5;
       .leafBananier {
         position: absolute;
         width: 100%;
@@ -57,7 +59,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: vars.$secondary-color-light;
+        background-color: vars.$secondary-color-dark;
         border-radius: 2vh;
         width: 15em;
         height: 11em;
@@ -97,19 +99,19 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 2.5em 1.5em;
-        .firstTextBloc1 {
+        .firstTextBloc {
           font-family: 'SourceSansPro-Bold';
           font-size: 1.5rem;
-          color: vars.$secondary-color-light;
-          margin-bottom: 1em;
-        }
-        .secondTextBloc1 {
-          font-family: 'SourceSansPro-LightItalic';
-          font-size: 1.25rem;
           color: vars.$secondary-color-dark;
           margin-bottom: 1em;
         }
-        .lastTextBloc1 {
+        .secondTextBloc {
+          font-family: 'SourceSansPro-LightItalic';
+          font-size: 1.25rem;
+          color: vars.$secondary-color-more-dark;
+          margin-bottom: 1em;
+        }
+        .lastTextBloc {
           font-family: 'SourceSansPro-Light';
           font-size: 1.1rem;
           color: vars.$primary-color;
@@ -120,16 +122,131 @@
           font-family: 'SourceSansPro-Regular';
           font-size: 1.5rem;
           padding: 0.5em;
-          color: vars.$secondary-color-light;
+          color: vars.$secondary-color-dark;
           background-color: transparent;
-          border: 3px solid vars.$secondary-color-light;
+          border: 3px solid vars.$secondary-color-dark;
+        }
+      }
+    }
+  }
+  // TROISIEME CONTAINER
+  .thirdContainer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .containerInfos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: vars.$secondary-color-light;
+      width: 100%;
+      padding: 2.5em 1.5em;
+      .titleInfo {
+        font-family: 'Lora-Regular';
+        font-size: 2rem;
+        margin-bottom: 1em;
+        text-align: center;
+        color: vars.$primary-color;
+      }
+      .groupInfos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 60vh;
+        .cercleInfo {
+          width: 15px;
+          height: 15px;
+          border-radius: 15vh;
+          background-color: vars.$primary-color;
+        }
+        .oneInfo {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          width: 47%;
+          .logoInfo {
+            height: 9em;
+          }
+          .oneTitleInfo {
+            font-family: 'SourceSansPro-Bold';
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            color: vars.$secondary-color-dark;
+            padding: .3em 0;
+          }
+          .oneTextInfo {
+            font-family: 'SourceSansPro-Regular';
+            font-size: 1rem;
+            color: vars.$primary-color;
+          }
+        }
+        
+      }
+    }
+    .secondBloc{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; // a changer sur grand écran
+      .containerSlide {
+        width: 100%; // a changer sur grand écran
+        .each-slide {
+          display: flex;
+          justify-content: center;
+          overflow: hidden;
+          width: 100%;
+          .slideImage{
+            height: 40em;
+          }
+        }
+      }
+      .paragraphSecondBloc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2.5em 1.5em;
+        .secondTextBloc {
+          font-family: 'SourceSansPro-Bold';
+          font-size: 1.5rem;
+          color: vars.$secondary-color-dark;
+          margin-bottom: 1em;
+          text-align: right;
+        }
+        .secondTextBloc2 {
+          font-family: 'SourceSansPro-LightItalic';
+          font-size: 1.25rem;
+          color: vars.$secondary-color-more-dark;
+          margin-bottom: 1em;
+          text-align: right;
+        }
+        .lastTextBloc {
+          font-family: 'SourceSansPro-Light';
+          font-size: 1.1rem;
+          color: vars.$primary-color;
+          margin-bottom: 2em;
+          text-align: right;
+        }
+        .buttonBloc {
+          width: 180px;
+          font-family: 'SourceSansPro-Regular';
+          font-size: 1.5rem;
+          padding: 0.5em;
+          color: vars.$secondary-color-dark;
+          background-color: transparent;
+          border: 3px solid vars.$secondary-color-dark;
+        }
+        a {
+          width: 180px;
+          align-self: flex-end;
         }
       }
     }
   }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:850px) {
   .home {
     .firstContainer {
       .firstTitle {
@@ -160,7 +277,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background-color: vars.$secondary-color-light;
+          background-color: vars.$secondary-color-dark;
           border-radius: 2vh;
           min-width: 15em;
           .cardLogo {
@@ -183,9 +300,71 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 8em;
-        padding: 0em 5em;
+        width: 80%;
         .containerSlide {
-          max-width:35em;
+          max-width:50%;
+        }
+        .paragraphFirstBloc {
+          padding: 3.5em 2em;
+        }
+      }
+    }
+    .thirdContainer {
+      .blocBananier {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+        .Bananier {
+          position: absolute;
+          height: 60%;
+          bottom: -20px;
+          left: -50px;
+          z-index: -1;
+        }
+      }
+      .secondBloc{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 8em 0;
+        .containerSlide {
+          max-width:50%;
+        }
+        .paragraphSecondBloc {
+          padding: 3.5em 2em;
+        }
+      }
+      .containerInfos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: vars.$secondary-color-light;
+        width: 100%;
+        padding: 2.5em 1.5em;
+        .titleInfo {
+          font-family: 'Lora-Regular';
+          font-size: 2rem;
+          margin-bottom: 1em;
+          text-align: center;
+          color: vars.$primary-color;
+        }
+        .groupInfos {
+          justify-content: center;
+          height: 25vh;
+          .cercleInfoMiddle {
+            width: 15px;
+            height: 15px;
+            border-radius: 15vh;
+            background-color: vars.$primary-color;
+          }
+          .oneInfo {
+            width: 20%;
+          }
+          
         }
       }
     }
