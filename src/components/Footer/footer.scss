@@ -25,6 +25,7 @@
     .containerFooterContact {
       margin-left: 1.5em;
       margin-top: 2.5em;
+      margin-bottom: 2.5em;
       .titleFooter {
         font-family: 'SourceSansPro-Regular';
         font-size: 1.5rem;
@@ -77,9 +78,19 @@
     justify-content: space-between;
     font-family: 'SourceSansPro-SemiBold';
     color: vars.$primary-color;
-    padding: .5em;
-    margin-top: 2.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     background-color: vars.$secondary-color-light;
+    align-items: center;
+    height: 4vh;
+    .textBottomFooter {
+      &:hover {
+        color: vars.$secondary-color-more-dark;
+      }
+    }
+    .textBottomFooter--active {
+      color: vars.$secondary-color-more-dark;
+    }
   }
 }
 
@@ -91,18 +102,21 @@
       justify-content: space-evenly;
       width: 100%;
       align-self: center;
-      // border: 1px solid red;
-
       .containerFooterContact {
-        margin: 0 1.5em;
-        margin-top: 2.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 2.5em;
+        margin-left: 0;
+        width: 18em;
       }
     }
     .bottomFooter {
-      // border: 1px solid red;
-      justify-content: space-between;
-      align-self: center;
-      width: 100%;
+      justify-content: space-evenly;
+      padding: 0;
+      p {
+        width: 18em;
+      }
     }
   }
 }

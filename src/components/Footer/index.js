@@ -52,7 +52,7 @@ const Footer = () => {
         </nav>
       </section>
       <div className="bottomFooter">
-        <p>
+        <p className="textBottomFooter" activeClassName="textBottomFooter--active">
           <NavLink exact to="/mentionslegales">Mentions légales</NavLink>
         </p>
         <p>© 2021 Hôtel Mimado</p>
