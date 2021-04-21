@@ -17,6 +17,11 @@ const Footer = () => {
       behavior:"smooth"
     });
   }
+  const redirectOnClickToTop = () => {
+    window.scrollTo({
+      top:0,
+    });
+  }
   return (
     <div className="footer">
       <section className="firstContainerFooter">
@@ -52,8 +57,8 @@ const Footer = () => {
         </nav>
       </section>
       <div className="bottomFooter">
-        <p className="textBottomFooter" activeClassName="textBottomFooter--active">
-          <NavLink exact to="/mentionslegales">Mentions légales</NavLink>
+        <p className="textBottomFooter">
+          <NavLink exact to="/mentionslegales" activeClassName="textBottomFooter--active" onClick={redirectOnClickToTop}>Mentions légales</NavLink>
         </p>
         <p>© 2021 Hôtel Mimado</p>
       </div>

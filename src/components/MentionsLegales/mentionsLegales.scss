@@ -1,0 +1,52 @@
+@use 'src/styles/vars';
+
+.mentionsLegales {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  .maskLeafBananier {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    .leafBananier {
+      position: absolute;
+      width: 30rem;
+      top: -90px;
+      right: -60px;
+      z-index: -1;
+    }
+  }
+  .paragrapheMention {
+    padding: 2.5em 1.5em;
+    .titleMentions {
+      font-family: 'Lora-Regular';
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      color: vars.$secondary-color-more-dark;
+      margin-bottom: 1.5em;
+    }
+    .textMentions {
+      font-family: 'SourceSansPro-Regular';
+      color: vars.$primary-color;
+      font-size: 1.1rem;
+    }
+    .textMentions--margB {
+      font-family: 'SourceSansPro-Regular';
+      color: vars.$primary-color;
+      margin-bottom: 1em;
+      font-size: 1.1rem;
+    }
+    .titleParaMentions {
+      font-family: 'SourceSansPro-SemiBold';
+      font-size: 1.2rem;
+      margin-bottom: .5em;
+      color: vars.$primary-color;
+    }
+  }
+}
+
+
+

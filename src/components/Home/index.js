@@ -97,32 +97,32 @@ const Home = () => (
         <img className="Bananier" src={Bananier} alt="Image de fond représentant une bananier."/>
       </div>
       <div className="containerInfos">
-        <h3 className="titleInfo">Informations complémentaires</h3>
+        <h2 className="titleInfo">Informations complémentaires</h2>
         <div className="groupInfos">
           <div className="oneInfo">
             <img className="logoInfo" src={timeHotel} alt="Icone d'horloge représentant les horaires de départ et d'arrivée."/>
-            <h4 className="oneTitleInfo">horaire</h4>
+            <h3 className="oneTitleInfo">horaire</h3>
             <p className="oneTextInfo">Arrivée: 07:00 - 20:00</p>
             <p className="oneTextInfo">Départ: 12:00 - 16:00</p>
           </div>
           <span className="cercleInfo"></span>
           <div className="oneInfo">
             <img className="logoInfo" src={table} alt="Icone d'une table informant sur le prix du dejeuner."/>
-            <h4 className="oneTitleInfo">dejeuner</h4>
+            <h3 className="oneTitleInfo">dejeuner</h3>
             <p className="oneTextInfo">Petit déjeuner</p>
             <p className="oneTextInfo">pour 2500 à 3500 CFA.</p>
           </div>
           <span className="cercleInfoMiddle"></span>
           <div className="oneInfo">
             <img className="logoInfo" src={animaux} alt="Icone représentant l'acceptation des animaux de compagnies.'"/>
-            <h4 className="oneTitleInfo">animaux</h4>
+            <h3 className="oneTitleInfo">animaux</h3>
             <p className="oneTextInfo">Animaux de</p>
             <p className="oneTextInfo">compagnie acceptés</p>
           </div>
           <span className="cercleInfo"></span>
           <div className="oneInfo">
             <img className="logoInfo" src={wifi} alt="Icone représentant l'accés au wifi gratuitement."/>
-            <h4 className="oneTitleInfo">wifi</h4>
+            <h3 className="oneTitleInfo">wifi</h3>
             <p className="oneTextInfo">WIFI disponible</p>
             <p className="oneTextInfo">gratuitement</p>
           </div>

@@ -15,6 +15,7 @@ import Prestation from '../Prestation';
 import Activites from '../Activites';
 import Contact from '../Contact';
 import Footer from '../Footer';
+import MentionsLegales from '../MentionsLegales';
 
 
 import './app.scss';
@@ -56,6 +57,7 @@ const App = () => (
         </Route>
         <Route exact path="/mentionslegales">
           <Header />
+          <MentionsLegales />
           <Footer />
         </Route>
       </Switch>
