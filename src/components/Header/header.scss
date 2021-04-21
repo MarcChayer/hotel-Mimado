@@ -186,17 +186,7 @@
       justify-content: flex-end;
     }
     &__one {
-      font-family: 'SourceSansPro-SemiBold';
-      text-transform: uppercase;
-      color: white;
       margin: 0 1.5em 0 1.5em;
-      &--active {
-        color: vars.$secondary-color-dark;
-      }
-      &:hover {
-        color: vars.$secondary-color-dark;
-        transition: 1s;
-      }
     }
   }
 

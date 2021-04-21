@@ -1,0 +1,108 @@
+@use 'src/styles/vars';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: vars.$primary-color;
+  color: white;
+  border-top: 3px solid vars.$secondary-color-dark;
+  .firstContainerFooter {
+    position: relative;
+    .goToTop {
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: vars.$secondary-color-dark;
+      right : 25px;
+      top: -25px;
+      img {
+        width: 60%;
+      }
+    }
+    .containerFooterContact {
+      margin-left: 1.5em;
+      margin-top: 2.5em;
+      .titleFooter {
+        font-family: 'SourceSansPro-Regular';
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+      }
+      .contactNumberFooter {
+        display: flex;
+        height: 3em;
+        margin-bottom: 1em;
+        .contactLogoFooter {
+          padding-right: 1em;
+          width: 3em;
+        }
+        .groupFooterContact {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .oneFooterContact {
+            font-family: 'SourceSansPro-Light';
+            font-size: 1.3rem;
+            &:hover {
+              color: vars.$secondary-color-dark;
+              transition: 1s;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .containerFooterContact {
+      .groupNavFooter {
+        .oneFooterContact {
+          font-family: 'SourceSansPro-Light';
+          font-size: 1.3rem;
+          line-height: 1.2em;
+          &--active {
+            color: vars.$secondary-color-dark;
+          }
+          &:hover {
+            color: vars.$secondary-color-dark;
+            transition: 1s;
+          }
+        }
+      }
+    }
+  }
+  .bottomFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'SourceSansPro-SemiBold';
+    color: vars.$primary-color;
+    padding: .5em;
+    margin-top: 2.5em;
+    background-color: vars.$secondary-color-light;
+  }
+}
+
+@media screen and (min-width:850px) {
+  .footer {
+    .firstContainerFooter {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      align-self: center;
+      // border: 1px solid red;
+
+      .containerFooterContact {
+        margin: 0 1.5em;
+        margin-top: 2.5em;
+      }
+    }
+    .bottomFooter {
+      // border: 1px solid red;
+      justify-content: space-between;
+      align-self: center;
+      width: 100%;
+    }
+  }
+}

@@ -27,28 +27,37 @@ const App = () => (
         <Route exact path="/">
           <Header />
           <Home />
+          <Footer />
         </Route>
         <Route exact path="/hebergement">
           <Header />
           <Hebergement />
+          <Footer />
         </Route>
         <Route exact path="/restauration">
           <Header />
           <Restauration />
+          <Footer />
         </Route>
         <Route exact path="/prestation">
           <Header />
           <Prestation />
+          <Footer />
         </Route>
         <Route exact path="/activites">
           <Header />
           <Activites />
+          <Footer />
         </Route>
         <Route exact path="/contact">
           <Header />
           <Contact />
+          <Footer />
         </Route>
-        <Footer />
+        <Route exact path="/mentionslegales">
+          <Header />
+          <Footer />
+        </Route>
       </Switch>
     </Router>
   </div>
