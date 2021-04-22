@@ -14,12 +14,11 @@ const MentionsLegales = () => (
     </div>
     <div className="paragrapheMention">
       <h1 className="titleMentions">mentions légales</h1>
-      <p className="textMentions--margB">Les informations suivantes sont fournies en vertu de l'Article 6 de LOI n° 2004-575 du 21 juin 2004 pour la Confiance dans l'Economie Numérique (www.legifrance.gouv.fr).</p>
-      <p className="textMentions">Siège social : </p>
-      <p className="textMentions--margB">URL du site : mimadohotel.com</p>
       <h2 className="titleParaMentions">Directrice :</h2>
       <p className="textMentions">Michéle Lobe-Manga</p>
       <p className="textMentions--margB">mimadohotel@gmail.com</p>
+      <p className="textMentions">Siège social : </p>
+      <p className="textMentions--margB">URL du site : mimadohotel.com</p>
       <p className="textMentions">Numéro d'inscription au registre de commerce et des société : 38848113700023</p>
       <p className="textMentions">Numéro de TVA INTRACOMMUNAUTAIRE : FR63388481137</p>
       <p className="textMentions--margB">Forme juridique :</p>

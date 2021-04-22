@@ -2,7 +2,7 @@
 
 .mentionsLegales {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   height: 100%;
   position: relative;
   .maskLeafBananier {
@@ -20,7 +20,11 @@
     }
   }
   .paragrapheMention {
-    padding: 2.5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    padding: 5em 1.5em;
+    width: 90%;
+    height: 100%;
     .titleMentions {
       font-family: 'Lora-Regular';
       text-transform: uppercase;
@@ -50,3 +54,11 @@
 
 
 
+@media screen and (min-width:2560px) {
+  .mentionsLegales {
+    height: 100%;
+    .paragrapheMention {
+      height:70vh;
+    }
+  }
+}
