@@ -3,7 +3,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  // Switch,
 } from 'react-router-dom';
 
 // == Import containers
@@ -24,43 +24,29 @@ import './app.scss';
 const App = () => (
   <div className="app">
     <Router>
-      <Switch> 
+      <Header />
         <Route exact path="/">
-          <Header />
           <Home />
-          <Footer />
         </Route>
         <Route path="/hebergement">
-          <Header />
           <Hebergement />
-          <Footer />
         </Route>
         <Route path="/restauration">
-          <Header />
           <Restauration />
-          <Footer />
         </Route>
         <Route path="/prestation">
-          <Header />
           <Prestation />
-          <Footer />
         </Route>
         <Route path="/activites">
-          <Header />
           <Activites />
-          <Footer />
         </Route>
         <Route path="/contact">
-          <Header />
           <Contact />
-          <Footer />
         </Route>
         <Route path="/mentionslegales">
-          <Header />
           <MentionsLegales />
-          <Footer />
         </Route>
-      </Switch>
+      <Footer />
     </Router>
   </div>
 );

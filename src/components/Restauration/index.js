@@ -7,17 +7,17 @@ import 'react-slideshow-image/dist/styles.css'
 import './restauration.scss';
 
 // == Import images slideshows bloc1
-import photo1 from '../../assets/images/restauration/bloc1/resto1.jpg'; 
-import photo2 from '../../assets/images/restauration/bloc1/resto2.jpg';
-import photo3 from '../../assets/images/restauration/bloc1/resto3.jpg';
+import photo1 from '../../assets/images/restauration/bloc1/resto3.jpg';
+import photo2 from '../../assets/images/restauration/bloc1/resto1.jpg'; 
+import photo3 from '../../assets/images/restauration/bloc1/resto2.jpg';
 
 // == Import images slideshows bloc2
-import photo4 from '../../assets/images/restauration/bloc2/bar1.jpg'; 
-import photo5 from '../../assets/images/restauration/bloc2/bar2.jpg';
-import photo6 from '../../assets/images/restauration/bloc2/bar3.jpg';
-import photo7 from '../../assets/images/restauration/bloc2/bar4.jpg';
-import photo8 from '../../assets/images/restauration/bloc2/bar5.jpg';
-import photo9 from '../../assets/images/restauration/bloc2/bar6.jpg';
+import photo4 from '../../assets/images/restauration/bloc2/bar6.jpg';
+import photo5 from '../../assets/images/restauration/bloc2/bar5.jpg';
+import photo7 from '../../assets/images/restauration/bloc2/bar2.jpg';
+import photo6 from '../../assets/images/restauration/bloc2/bar4.jpg';
+// import photo8 from '../../assets/images/restauration/bloc2/bar1.jpg'; 
+// import photo9 from '../../assets/images/restauration/bloc2/bar3.jpg';
 
 // == Import images icone
 import feuilleBananier from '../../assets/images/leafBanana.svg';
@@ -89,7 +89,7 @@ const Restauration = () => (
             <img className="slideImage" src={photo7} alt="Plage de l'hôtel"/>
           </div>
         </div>
-        <div className="each-slide">
+        {/* <div className="each-slide">
           <div>
             <img className="slideImage" src={photo8} alt="Photo de l'hôtel"/>
           </div>
@@ -98,7 +98,7 @@ const Restauration = () => (
           <div>
             <img className="slideImage" src={photo9} alt="Photo aérienne de l'hôtel"/>
           </div>
-        </div>
+        </div> */}
       </Fade>
     </div>
     <div className="paragraphSecondBloc">

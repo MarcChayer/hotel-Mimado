@@ -6,8 +6,8 @@ import 'react-slideshow-image/dist/styles.css'
 import './hebergement.scss';
 
 // == Import images slideshows
-import photo1 from '../../assets/images/hebergement/heber1.jpg'; 
-import photo2 from '../../assets/images/hebergement/heber2.jpg';
+import photo1 from '../../assets/images/hebergement/heber2.jpg';
+import photo2 from '../../assets/images/hebergement/heber1.jpg'; 
 import photo3 from '../../assets/images/hebergement/heber3.jpg';
 
 // == Import images icone
