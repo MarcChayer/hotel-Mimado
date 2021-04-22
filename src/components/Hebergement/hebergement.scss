@@ -49,7 +49,7 @@ span {
         overflow: hidden;
         width: 100%;
         .slideImage{
-          height: 40em;
+          height: 550px;
         }
       }
     }
@@ -102,10 +102,9 @@ span {
         width: auto;
         padding: .5em 1.5em 1.5em 1.5em;
         .onePictureCard {
-          height: 4em;
-          width: auto;
+          height: 60px;
           &--wifi {
-            height: 2.5em;
+            height: 35px;
           }
         }
       }
@@ -129,7 +128,6 @@ span {
     }
   }
 }
-
 
 @media screen and (min-width:850px) {
   .hebergement {
@@ -181,9 +179,10 @@ span {
     }
     .secondBloc{
       display: flex;
+      flex-wrap:wrap;
       flex-direction: row;
-      justify-content: space-around;
-      width: 80%;
+      justify-content: space-evenly;
+      width: 90%;
       margin-bottom: 8em;
     }
   }

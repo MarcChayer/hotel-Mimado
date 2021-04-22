@@ -65,17 +65,15 @@ const Hebergement = () => (
       <div className="cardHebergement">
         <p className="cardTitle">Chambres comprenants</p>
         <div className="cardGroupPicture">
-          <img className="onePictureCard" src={icone1} alt="Logo représentant un climatiseur"/>
+        <img className="onePictureCard" src={icone2} alt="Logo représentant un ventilateur"/>
           <img className="onePictureCard--wifi" src={icone3} alt="Logo représentant le WIFI"/>
-          <img className="onePictureCard" src={icone4} alt="Logo représentant une télévision"/>
         </div>
         <ul className="cardGroupText">
-          <li className="oneTextCard">Climatisée</li>
-          <li className="oneTextCard">Télévision et <span>canal+</span></li>
+          <li className="oneTextCard">Ventilée</li>
           <li className="oneTextCard">Réseau WIFI</li>
           <li className="oneTextCard">(chambre non-fumeur)</li>
         </ul>
-        <p className="priceRoom">Prix: <span>25000 CFA</span> ou <span>38€</span></p>
+        <p className="priceRoom">Prix: <span>18000 CFA</span> ou <span>28€</span></p>
       </div>
       <div className="cardHebergement">
         <p className="cardTitle">Chambres comprenants</p>
@@ -95,15 +93,17 @@ const Hebergement = () => (
       <div className="cardHebergement">
         <p className="cardTitle">Chambres comprenants</p>
         <div className="cardGroupPicture">
-        <img className="onePictureCard" src={icone2} alt="Logo représentant un ventilateur"/>
+          <img className="onePictureCard" src={icone1} alt="Logo représentant un climatiseur"/>
           <img className="onePictureCard--wifi" src={icone3} alt="Logo représentant le WIFI"/>
+          <img className="onePictureCard" src={icone4} alt="Logo représentant une télévision"/>
         </div>
         <ul className="cardGroupText">
-          <li className="oneTextCard">Ventilée</li>
+          <li className="oneTextCard">Climatisée</li>
+          <li className="oneTextCard">Télévision et <span>canal+</span></li>
           <li className="oneTextCard">Réseau WIFI</li>
           <li className="oneTextCard">(chambre non-fumeur)</li>
         </ul>
-        <p className="priceRoom">Prix: <span>18000 CFA</span> ou <span>28€</span></p>
+        <p className="priceRoom">Prix: <span>25000 CFA</span> ou <span>38€</span></p>
       </div>
     </section>
     <div className="blocBananier">

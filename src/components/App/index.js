@@ -6,16 +6,16 @@ import {
   Switch,
 } from 'react-router-dom';
 
-// == Import
-import Header from '../Header';
-import Home from '../Home';
-import Hebergement from '../Hebergement';
-import Restauration from '../Restauration';
-import Prestation from '../Prestation';
-import Activites from '../Activites';
-import Contact from '../Contact';
-import Footer from '../Footer';
-import MentionsLegales from '../MentionsLegales';
+// == Import containers
+import Header from '../../containers/Header';
+import Home from '../../containers/Home';
+import Hebergement from '../../containers/Hebergement';
+import Restauration from '../../containers/Restauration';
+import Prestation from '../../containers/Prestation';
+import Activites from '../../containers/Activites';
+import Contact from '../../containers/Contact';
+import Footer from '../../containers/Footer';
+import MentionsLegales from '../../containers/MentionsLegales';
 
 
 import './app.scss';
@@ -30,32 +30,32 @@ const App = () => (
           <Home />
           <Footer />
         </Route>
-        <Route exact path="/hebergement">
+        <Route path="/hebergement">
           <Header />
           <Hebergement />
           <Footer />
         </Route>
-        <Route exact path="/restauration">
+        <Route path="/restauration">
           <Header />
           <Restauration />
           <Footer />
         </Route>
-        <Route exact path="/prestation">
+        <Route path="/prestation">
           <Header />
           <Prestation />
           <Footer />
         </Route>
-        <Route exact path="/activites">
+        <Route path="/activites">
           <Header />
           <Activites />
           <Footer />
         </Route>
-        <Route exact path="/contact">
+        <Route path="/contact">
           <Header />
           <Contact />
           <Footer />
         </Route>
-        <Route exact path="/mentionslegales">
+        <Route path="/mentionslegales">
           <Header />
           <MentionsLegales />
           <Footer />

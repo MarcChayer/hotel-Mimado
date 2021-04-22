@@ -4,12 +4,10 @@
   0% {
     transform: translateY(100vh);
     opacity: 0;
-    // height: 0vh;
   }
   100% {
     transform: translateY(0vh);
     opacity: 1;
-    // height: 100vh;
   }
 }
 
