@@ -24,8 +24,6 @@ const Header = () => {
   const handleOnClickCloseMenu = () => {
     const burger = document.querySelector('.burger');
     burger.classList.remove('active');
-    // const navMobile = document.querySelector('.navlink__mobile');
-    // navMobile.classList.add('moveTop');
     setShowBurgerMenu(false);
   };
 

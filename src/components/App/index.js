@@ -3,7 +3,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  // Switch,
+  Switch,
 } from 'react-router-dom';
 
 // == Import containers
@@ -22,33 +22,35 @@ import './app.scss';
 
 // == Composant
 const App = () => (
-  <div className="app">
-    <Router>
+  <Router>
+    <div className="app">
       <Header />
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/hebergement">
-          <Hebergement />
-        </Route>
-        <Route path="/restauration">
-          <Restauration />
-        </Route>
-        <Route path="/prestation">
-          <Prestation />
-        </Route>
-        <Route path="/activites">
-          <Activites />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/mentionslegales">
-          <MentionsLegales />
-        </Route>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/hebergement">
+            <Hebergement />
+          </Route>
+          <Route path="/restauration">
+            <Restauration />
+          </Route>
+          <Route path="/prestation">
+            <Prestation />
+          </Route>
+          <Route path="/activites">
+            <Activites />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/mentionslegales">
+            <MentionsLegales />
+          </Route>
+        </Switch>
       <Footer />
-    </Router>
-  </div>
+    </div>
+  </Router>
 );
 
 // == Export
