@@ -40,19 +40,19 @@ const Header = () => {
             <NavLink exact to="/"  activeClassName="navlink__one--active">accueil</NavLink>
           </li>
           <li className="navlink__one" onClick={handleOnClickCloseMenu}>
-            <NavLink exact to="/hebergement"  activeClassName="navlink__one--active">hébergement</NavLink>
+            <NavLink to="/hebergement"  activeClassName="navlink__one--active">hébergement</NavLink>
           </li>
           <li className="navlink__one" onClick={handleOnClickCloseMenu}>
-            <NavLink exact to="/restauration"  activeClassName="navlink__one--active">restauration</NavLink>
+            <NavLink to="/restauration"  activeClassName="navlink__one--active">restauration</NavLink>
           </li>
           <li className="navlink__one" onClick={handleOnClickCloseMenu}>
-            <NavLink exact to="/prestation"  activeClassName="navlink__one--active">préstations</NavLink>
+            <NavLink to="/prestation"  activeClassName="navlink__one--active">préstations</NavLink>
           </li>
           <li className="navlink__one" onClick={handleOnClickCloseMenu}>
-            <NavLink exact to="/activites"  activeClassName="navlink__one--active">activités</NavLink>
+            <NavLink to="/activites"  activeClassName="navlink__one--active">activités</NavLink>
           </li>
           <li className="navlink__one" onClick={handleOnClickCloseMenu}>
-            <NavLink exact to="/contact"  activeClassName="navlink__one--active">contact</NavLink>
+            <NavLink to="/contact"  activeClassName="navlink__one--active">contact</NavLink>
           </li>
         </ul>
       </nav>

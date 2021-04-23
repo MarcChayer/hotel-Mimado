@@ -22,9 +22,9 @@ import './app.scss';
 
 // == Composant
 const App = () => (
-  <Router>
-    <div className="app">
-      <Header />
+  <div className="app">
+    <Router>
+      <Header/>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -48,9 +48,9 @@ const App = () => (
             <MentionsLegales />
           </Route>
         </Switch>
-      <Footer />
-    </div>
-  </Router>
+      <Footer/>
+    </Router>
+  </div>
 );
 
 // == Export
