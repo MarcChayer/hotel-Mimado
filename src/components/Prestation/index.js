@@ -16,11 +16,11 @@ import Bananier from '../../assets/images/treeBanana.svg';
 
 // == Composant
 const Prestation = () => (
-  <div className="restauration">
+  <div className="activites">
   <div className="maskLeafBananier">
     <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
   </div>
-  <h1 className="titleRestauration">prestation</h1>
+  <h1 className="titleActivites">prestation</h1>
   <section className="firstBloc">
     <div className="containerSlide">
         <div className="each-slide">
@@ -46,7 +46,7 @@ const Prestation = () => (
     <div className="containerSlide">
         <div className="each-slide">
           <div>
-            <img className="slideImage" src={photo2} alt="Plage de l'hôtel"/>
+            <img className="slideImage" src={photo2} alt="Photo de l'hôtel."/>
           </div>
         </div>
     </div>
@@ -57,7 +57,7 @@ const Prestation = () => (
     </div>
   </section>
   <div className="blocBananier">
-    <img className="Bananier" src={Bananier} alt="Image de fond représentant une bananier."/>
+    <img className="Bananier" src={Bananier} alt="Photo d'un mariage organisé sur notre plage."/>
   </div>
 </div>
 );

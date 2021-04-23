@@ -40,17 +40,17 @@ const Hebergement = () => (
         <Fade {...proprietes}>
           <div className="each-slide">
             <div>
-              <img className="slideImage" src={photo1} alt="Plage de l'hôtel"/>
+              <img className="slideImage" src={photo1} alt="Exterieur de l'hôtel"/>
             </div>
           </div>
           <div className="each-slide">
             <div>
-              <img className="slideImage" src={photo2} alt="Photo de l'hôtel"/>
+              <img className="slideImage" src={photo2} alt="Photo de chambre"/>
             </div>
           </div>
           <div className="each-slide">
             <div>
-              <img className="slideImage" src={photo3} alt="Photo aérienne de l'hôtel"/>
+              <img className="slideImage" src={photo3} alt="Photo de chambre"/>
             </div>
           </div>
         </Fade>

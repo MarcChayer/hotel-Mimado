@@ -45,24 +45,24 @@ const Restauration = () => (
       <Fade {...proprietes}>
         <div className="each-slide">
           <div>
-            <img className="slideImage" src={photo1} alt="Plage de l'hôtel"/>
+            <img className="slideImage" src={photo1} alt="Photo de l'hôtel"/>
           </div>
         </div>
         <div className="each-slide">
           <div>
-            <img className="slideImage" src={photo2} alt="Photo de l'hôtel"/>
+            <img className="slideImage" src={photo2} alt="Photo du restaurant"/>
           </div>
         </div>
         <div className="each-slide">
           <div>
-            <img className="slideImage" src={photo3} alt="Photo aérienne de l'hôtel"/>
+            <img className="slideImage" src={photo3} alt="Photo du restaurant"/>
           </div>
         </div>
       </Fade>
     </div>
     <div className="paragraphFirstBloc">
       <h2 className="firstTextBloc">Notre restaurant</h2>
-      <p className="secondTextBloc">« Venez vous régaler et réveiller vos papilles. Nous vous serviront dans une ambiance conviviale des plats Français, Camerounais, Pakistanais, ainsi que de délicieux poissons grillés fraichement pêchés spécialement pour vous. »</p>
+      <p className="secondTextBloc">« Venez vous régaler et réveiller vos papilles. Nous vous serviront dans une ambiance conviviale des plats Français, Camerounais, Pakistanais, ainsi que de délicieux poissons grillés fraîchement pêchés spécialement pour vous. »</p>
       <p className="lastTextBloc">Que ce soit au restaurant de la plage, les pieds dans le sable, ou au restaurant couvert, une cuisine exotique vous accueillera.</p>
     </div>
   </section>
@@ -71,22 +71,22 @@ const Restauration = () => (
       <Fade {...proprietes}>
         <div className="each-slide">
           <div>
-            <img className="slideImage" src={photo4} alt="Plage de l'hôtel"/>
+            <img className="slideImage" src={photo4} alt="Vue depuis la route du restaurant côté plage."/>
           </div>
         </div>
         <div className="each-slide">
           <div>
-            <img className="slideImage" src={photo5} alt="Photo de l'hôtel"/>
+            <img className="slideImage" src={photo5} alt="Vue du restaurant côté plage."/>
           </div>
         </div>
         <div className="each-slide">
           <div>
-            <img className="slideImage" src={photo6} alt="Photo aérienne de l'hôtel"/>
+            <img className="slideImage" src={photo6} alt="Restaurant côté plage."/>
           </div>
         </div>
         <div className="each-slide">
           <div>
-            <img className="slideImage" src={photo7} alt="Plage de l'hôtel"/>
+            <img className="slideImage" src={photo7} alt="La plage du restaurant."/>
           </div>
         </div>
         {/* <div className="each-slide">

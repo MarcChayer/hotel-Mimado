@@ -133,12 +133,12 @@ const Home = () => (
             <Fade {...proprietes}>
               <div className="each-slide">
                 <div>
-                  <img className="slideImage" src={photo4} alt="Plage de l'hôtel"/>
+                  <img className="slideImage" src={photo5} alt="Photo du restaurant en bord de plage."/>
                 </div>
               </div>
               <div className="each-slide">
                 <div>
-                  <img className="slideImage" src={photo5} alt="Photo du restaurant en bord de plage."/>
+                  <img className="slideImage" src={photo4} alt="Plage de l'hôtel"/>
                 </div>
               </div>
               <div className="each-slide">
