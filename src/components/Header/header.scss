@@ -28,14 +28,13 @@
   width: 30px;
   height: 24px;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   right: 1.5em;
   z-index: 98;
 }
 
-.moveTop {
-  background-color: red !important;
-  animation: animBurgerdesktop 2s !important;
+.burger.active {
+  position: fixed;
 }
 
 .burger span {

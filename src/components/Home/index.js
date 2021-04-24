@@ -150,7 +150,7 @@ const Home = () => (
           </div>
           <div className="paragraphSecondBloc">
             <p className="secondTextBloc">Un restaurant en bord de mer</p>
-            <p className="secondTextBloc2">« Venez vous aérer l’esprit autour de bon petit plat ou profiter du bar les pieds dans le sable. »</p>
+            <p className="secondTextBloc2">« Venez vous aérer l’esprit autour de bons petits plats ou profiter du bar les pieds dans le sable. »</p>
             <p className="lastTextBloc">Notre restaurant côté plage est ouvert tous les jours, que ce soit pour manger ou boire un verre !</p>
             <a href="/restauration"><button className="buttonBloc">En savoir plus</button></a>
           </div>
