@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: vars.$secondary-color-light;
+  background-color: white;
   .titleContact {
     font-family: 'Lora-Regular';
     text-transform: uppercase;
@@ -23,14 +23,14 @@
       .mapCamerounGradient {
         position: absolute;
         z-index: 1;
-        background: linear-gradient(vars.$secondary-color-light, #f2ebe400);
+        background: linear-gradient(white, #ffffff00);
         width: 100%;
         height: 60px;
       }
       .mapCamerounGradientBottom {
         position: absolute;
         bottom: 0;
-        background: linear-gradient(#f2ebe400, vars.$secondary-color-light);
+        background: linear-gradient(#ffffff00, white);
         width: 100%;
         height: 80px;
       }
@@ -94,6 +94,9 @@
           border: none;
           height: 40px;
           width: 100px;
+          &:hover {
+            background-color: vars.$secondary-color-more-dark;
+          }
         }
       }
     }
@@ -106,7 +109,7 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    background-color: vars.$secondary-color-light;
+    background-color: white;
     position: relative;
     z-index: 1;
     .titleContact {
