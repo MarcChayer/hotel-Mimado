@@ -2,6 +2,7 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import { Helmet } from 'react-helmet';
 
 // == Import
 import './activites.scss';
@@ -34,11 +35,18 @@ const proprietes = {
 
 // == Composant
 const Activites = () => (
-  <div className="restauration">
+  <div className="activites">
+    <Helmet defaultTitle="Hôtel Mimado">
+      <title>Hôtel Mimado - Activités</title>
+      <meta
+        name="description"
+        content="Juste besoin d’un repos éloigné de la vie citadine, faire une balade en pirogue sur la rivière « La Lobë » ? C’est possible, ainsi que bien d’autres choses !"
+      />
+    </Helmet>
   <div className="maskLeafBananier">
     <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
   </div>
-  <h1 className="titleRestauration">activités</h1>
+  <h1 className="titleActivites">activités</h1>
   <section className="firstBloc">
     <div className="containerSlide">
       <Fade {...proprietes}>

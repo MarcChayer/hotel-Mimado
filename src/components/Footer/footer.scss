@@ -28,7 +28,7 @@
       right : 25px;
       top: -25px;
       z-index: 2;
-      animation: 2s moveArrow .5s infinite alternate;
+      animation: 1.5s moveArrow .5s infinite alternate;
       &:hover {
         background-color: vars.$secondary-color-more-dark;
       }

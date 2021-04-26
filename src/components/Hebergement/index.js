@@ -2,6 +2,7 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import { Helmet } from 'react-helmet';
 
 import './hebergement.scss';
 
@@ -31,6 +32,13 @@ const proprietes = {
 // == Composant
 const Hebergement = () => (
   <div className="hebergement">
+    <Helmet defaultTitle="Hôtel Mimado">
+      <title>Hôtel Mimado - Hébergement</title>
+      <meta
+        name="description"
+        content="Notre hôtel dispose de 16 charmantes chambres avec salle d'eau, ventilées ou climatisées."
+      />
+    </Helmet>
     <div className="maskLeafBananier">
       <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
     </div>

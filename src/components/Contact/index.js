@@ -1,22 +1,26 @@
 // == Import npm
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import { Helmet } from 'react-helmet';
 
-// == Import
+// == Import style
+import './contact.scss';
+import 'react-toastify/dist/ReactToastify.css';
+
+// == Import image
 import map from '../../assets/images/camerounMap.svg';
 
-import './contact.scss';
 
 // == Composant
 const Contact = () => { 
+  toast.configure();
+
   const [name, setName] = useState("");
   const [firstName, setFirstName] = useState("");
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
-  console.log('name', name);
-
 
   const isEmail = () => {
     let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -30,11 +34,10 @@ const Contact = () => {
   const handleOnSubmit = (event) => {
     event.preventDefault();
     // verification des inputs
-    if (name && firstName && company && message && isEmail()) {
+    if (name && firstName && message && isEmail()) {
       emailjs.sendForm("service_gz5igu6", "template_jao6lyh", event.target, "user_9coErnt98IbJYjURIIR9L")
         .then((res) => {
-          // toast.success('Votre message à bien été envoyé, vous aurez un retour rapidement.', { className:"toast__success" });
-          console.log('succes', res);
+          toast.success('Nous accusons la bonne réception de votre message, vous aurez un retour rapidement.', { className:"toast__success" });
           setName("");
           setFirstName("");
           setCompany("");
@@ -43,16 +46,22 @@ const Contact = () => {
         });
     } 
     if (!name && !firstName && !message) {
-      // toast.error('Vous devez remplir les trois champs du formulaire.', { className:"toast__error" });
-      console.log('remplir 3 champs');
+      toast.error('Tous les champs du formulaire sont obligatoires, mis à part celui de l\'entreprise.', { className:"toast__error" });
     } else if (!isEmail()) {
-      // toast.error('Votre adresse mail ne semble pas valide, essayez à nouveau.', { className:"toast__error" });
+      toast.error('Votre adresse mail ne semble pas valide, rentrer une adresse valide.', { className:"toast__error" });
       console.log('email non conforme');
     }
   }
 
   return (
     <div className="contact">
+      <Helmet defaultTitle="Hôtel Mimado">
+        <title>Hôtel Mimado - Contact</title>
+        <meta
+          name="description"
+          content="Pour réserver une chambre ou un renseignement, n'hésitez pas à nous contacter via notre site internet ou pas téléphone."
+        />
+      </Helmet>
       <h1 className="titleContact">contact</h1>
       <section className="containerContact">
         <div className="formContainer">
@@ -132,6 +141,15 @@ const Contact = () => {
           <div className="mapCamerounGradientBottom"></div>
         </div>
       </section>
+      <ToastContainer 
+        position="top-right"
+        autoClose={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 // == Import npm
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 // == Import
 import './prestation.scss';
@@ -16,11 +17,18 @@ import Bananier from '../../assets/images/treeBanana.svg';
 
 // == Composant
 const Prestation = () => (
-  <div className="activites">
+  <div className="prestation">
+    <Helmet defaultTitle="Hôtel Mimado">
+      <title>Hôtel Mimado - Prestation</title>
+      <meta
+        name="description"
+        content="L'Hôtel Mimado* vous propose un large choix de services et prestations personnalisés pour faire de votre séjour une expérience unique."
+      />
+    </Helmet>
   <div className="maskLeafBananier">
     <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
   </div>
-  <h1 className="titleActivites">prestation</h1>
+  <h1 className="titlePrestation">prestation</h1>
   <section className="firstBloc">
     <div className="containerSlide">
         <div className="each-slide">
@@ -31,7 +39,7 @@ const Prestation = () => (
     </div>
     <div className="paragraphFirstBloc">
       <h2 className="firstTextBloc">Nos services</h2>
-      <p className="secondTextBloc">« L'Hôtel  Mimado* vous propose un large choix de services et prestations personnalisés pour faire de votre séjour une expérience unique. »</p>
+      <p className="secondTextBloc">« L'Hôtel Mimado* vous propose un large choix de services et prestations personnalisés pour faire de votre séjour une expérience unique. »</p>
       <ul className="lastTextBloc">
         <li>- Réception ouverte 24h/24</li>
         <li>- Wifi gratuit et illimité</li>

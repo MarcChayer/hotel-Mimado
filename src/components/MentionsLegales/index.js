@@ -1,5 +1,6 @@
 // == Import npm
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 // == Import
 import feuilleBananier from '../../assets/images/leafBanana.svg';
@@ -9,6 +10,13 @@ import './mentionsLegales.scss';
 // == Composant
 const MentionsLegales = () => (
   <div className="mentionsLegales">
+    <Helmet defaultTitle="Hôtel Mimado">
+      <title>Hôtel Mimado - Mentions légales</title>
+      <meta
+        name="description"
+        content="Mentions légales."
+      />
+    </Helmet>
     <div className="maskLeafBananier">
       <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
     </div>

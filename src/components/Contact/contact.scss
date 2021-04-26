@@ -82,6 +82,7 @@
           min-width: 100%;
           max-width: 100%;
           border: none;
+          margin-bottom: 3em!important;
           color: vars.$primary-color;
           &::placeholder {
             color: vars.$primary-color;
@@ -102,6 +103,19 @@
     }
   }
 }
+
+.toast{
+  &__success {
+    font-family: 'SourceSansPro-Bold';
+    // color: vars.$primary-color!important;
+    // background-color: rgb(255, 255, 255)!important;
+  };
+  &__error {
+    font-family: 'SourceSansPro-Bold';
+    // color: white!important;
+    // background-color: vars.$primary-color!important;
+  };
+};
 
 @media screen and (min-width:850px) {
   .contact {

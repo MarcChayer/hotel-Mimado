@@ -2,6 +2,7 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import { Helmet } from 'react-helmet';
 
 // == Import
 import './restauration.scss';
@@ -36,6 +37,13 @@ const proprietes = {
 // == Composant
 const Restauration = () => (
   <div className="restauration">
+    <Helmet defaultTitle="Hôtel Mimado">
+      <title>Hôtel Mimado - Restauration</title>
+      <meta
+        name="description"
+        content="L'Hôtel Mimado* dispose de deux restaurants, que ce soit à celui de la plage, les pieds dans le sable, ou au restaurant couvert, une cuisine exotique vous accueillera."
+      />
+    </Helmet>
   <div className="maskLeafBananier">
     <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
   </div>
@@ -62,7 +70,7 @@ const Restauration = () => (
     </div>
     <div className="paragraphFirstBloc">
       <h2 className="firstTextBloc">Notre restaurant</h2>
-      <p className="secondTextBloc">« Venez vous régaler et réveiller vos papilles. Nous vous serviront dans une ambiance conviviale des plats Français, Camerounais, Pakistanais, ainsi que de délicieux poissons grillés fraîchement pêchés spécialement pour vous. »</p>
+      <p className="secondTextBloc">« Venez vous régaler et réveiller vos papilles. Nous vous serviront dans une ambiance conviviale des plats Français, Camerounais, Pakistanais, ainsi que de délicieux poissons grillés fraîchement pêchés pour vous. »</p>
       <p className="lastTextBloc">Que ce soit au restaurant de la plage, les pieds dans le sable, ou au restaurant couvert, une cuisine exotique vous accueillera.</p>
     </div>
   </section>

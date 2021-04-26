@@ -4,7 +4,7 @@ span {
   font-family: 'SourceSansPro-SemiBoldItalic';
 }
 
-.restauration {
+.prestation {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,14 +27,13 @@ span {
   .blocBananier {
     display: none;
   }
-  .titleRestauration {
+  .titlePrestation {
     font-family: 'Lora-Regular';
     text-transform: uppercase;
     text-align: center;
     font-size: 1.7rem;
     color: vars.$secondary-color-more-dark;
-    padding-top: 3em;
-    margin-bottom: 1.5em;
+    margin: 3em 0;
   }
   .firstBloc{
     display: flex;
@@ -123,7 +122,7 @@ span {
 }
 
 @media screen and (min-width:850px) {
-  .restauration {
+  .prestation {
     align-items: center;
     .maskLeafBananier {
       .leafBananier {
@@ -147,7 +146,7 @@ span {
         z-index: -1;
       }
     }
-    .titleRestauration {
+    .titlePrestation {
       font-family: 'Lora-Regular';
       text-transform: uppercase;
       font-size: 1.7rem;
