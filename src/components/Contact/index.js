@@ -49,7 +49,6 @@ const Contact = () => {
       toast.error('Tous les champs du formulaire sont obligatoires, mis à part celui de l\'entreprise.', { className:"toast__error" });
     } else if (!isEmail()) {
       toast.error('Votre adresse mail ne semble pas valide, rentrer une adresse valide.', { className:"toast__error" });
-      console.log('email non conforme');
     }
   }
 
