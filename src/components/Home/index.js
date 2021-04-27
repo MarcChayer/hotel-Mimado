@@ -51,18 +51,6 @@ const Home = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   
-  var options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 1.0
-  }
-
-  const handleIntersect = () => {
-    console.log('handleIntersect');
-  }
-  
-  var observer = new IntersectionObserver(handleIntersect, options);
-
   return (
     <div className="home">
       <Helmet defaultTitle="Hôtel Mimado">
@@ -73,7 +61,7 @@ const Home = () => {
         />
       </Helmet>
       <section className="firstContainer">
-        <div className="firstTitleGroup">
+        <div className="firstTitleGroup" style={{ transform: `translateY(-${offsetY * 0.2}px)` }}>
           <span className="firstTitle">bienvenue à l'</span>
           <h1 className="firstTitle">hôtel mimado</h1>
         </div>
@@ -83,7 +71,7 @@ const Home = () => {
         <div className="maskLeafBananier">
           <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
         </div>
-        <div className="cardsHome reveal">
+        <div className="cardsHome">
           <NavLink exact to="/hebergement" className="cardHome">
             <div className="cardLogo"><img src={lit} alt="icone hôtellerie"/></div>
             <p className="textCard">Hôtel et Commodités</p>
