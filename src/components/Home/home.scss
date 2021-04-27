@@ -433,3 +433,23 @@
   }
 }
 
+@media screen and (min-width:2560px) {
+  .home {
+    .secondContainer {
+      .firstBloc{
+        width: 60%;
+        .react-slideshow-container {
+          width: 95%!important;
+        }
+      }
+    }
+    .thirdContainer {
+      .secondBloc{
+        width: 60%;
+        .react-slideshow-container {
+          width: 95%!important;
+        }
+      }
+    }
+  }
+}
