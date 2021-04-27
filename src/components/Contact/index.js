@@ -65,7 +65,7 @@ const Contact = () => {
       <section className="containerContact">
         <div className="formContainer">
           <p className="formTextContainer">Si vous souhaitez faire une réservation ou avoir plus d’information, contactez-nous :</p>
-          <p className="formTextContainer2">(Les mentions se terminant par * sont obligatoires.)</p>
+          <p className="formTextContainer2">(Les champs marqués d'un astérisque (*) sont obligatoires.)</p>
           <form method="post" className="form" onSubmit={handleOnSubmit}>
               <label className="formLabel">
                 Nom*
