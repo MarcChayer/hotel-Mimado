@@ -207,7 +207,8 @@
           overflow: hidden;
           width: 100%;
           .slideImage{
-            height: 550px;
+            // height: 550px;
+            width: 100%;
           }
         }
       }
@@ -320,6 +321,10 @@
         justify-content: center;
         margin-bottom: 8em;
         width: 70%;
+        .slideImage{
+          height: 550px;
+          width: auto!important;
+        }
         .containerSlide {
           max-width:50%;
         }
@@ -350,6 +355,10 @@
         justify-content: center;
         width: 70%;
         margin: 8em 0;
+        .slideImage{
+          height: 550px;
+          width: auto!important;
+        }
         .containerSlide {
           max-width:50%;
         }

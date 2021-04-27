@@ -46,8 +46,9 @@ span {
         display: flex;
         justify-content: center;
         overflow: hidden;
+        width: 100%;
         .slideImage{
-          height: 550px;
+          width: 100%;
         }
       }
     }
@@ -89,7 +90,7 @@ span {
         overflow: hidden;
         width: 100%;
         .slideImage{
-          height: 550px;
+          width: 100%;
         }
       }
     }
@@ -162,6 +163,10 @@ span {
       justify-content: center;
       margin-bottom: 8em;
       width: 70%;
+      .slideImage{
+        height: 550px;
+        width: auto!important;
+      }
       .containerSlide {
         max-width:50%;
       }
@@ -176,6 +181,10 @@ span {
       justify-content: center;
       margin-bottom: 8em;
       width: 70%;
+      .slideImage{
+        height: 550px;
+        width: auto!important;
+      }
       .containerSlide {
         max-width:50%;
       }
