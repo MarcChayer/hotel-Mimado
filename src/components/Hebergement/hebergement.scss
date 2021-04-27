@@ -33,8 +33,7 @@ span {
     text-align: center;
     font-size: 1.7rem;
     color: vars.$secondary-color-more-dark;
-    padding-top: 3em;
-    margin-bottom: 1.5em;
+    margin: 3em 0;
   }
   .firstBloc{
     display: flex;
@@ -161,7 +160,7 @@ span {
       color: vars.$secondary-color-more-dark;
       margin-bottom: 1.5em;
       text-align: left;
-      width: 80%;
+      width: 70%;
     }
     .firstBloc{
       display: flex;
@@ -169,7 +168,7 @@ span {
       align-items: center;
       justify-content: center;
       margin-bottom: 8em;
-      width: 80%;
+      width: 70%;
       .containerSlide {
         max-width:50%;
       }
@@ -184,6 +183,23 @@ span {
       justify-content: space-evenly;
       width: 90%;
       margin-bottom: 8em;
+    }
+  }
+}
+
+@media screen and (min-width:2560px) {
+  .hebergement {
+    .titleHebergement {
+      width: 60%;
+    }
+    .firstBloc{
+      width: 60%;
+      .react-slideshow-container {
+        width: 95%!important;
+      }
+    }
+    .secondBloc{
+      width: 60%;
     }
   }
 }

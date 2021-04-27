@@ -104,19 +104,6 @@
   }
 }
 
-.toast{
-  &__success {
-    font-family: 'SourceSansPro-Bold';
-    // color: vars.$primary-color!important;
-    // background-color: rgb(255, 255, 255)!important;
-  };
-  &__error {
-    font-family: 'SourceSansPro-Bold';
-    // color: white!important;
-    // background-color: vars.$primary-color!important;
-  };
-};
-
 @media screen and (min-width:850px) {
   .contact {
     display: flex;
