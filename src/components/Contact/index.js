@@ -35,7 +35,7 @@ const Contact = () => {
     event.preventDefault();
     // verification des inputs
     if (name && firstName && message && isEmail()) {
-      emailjs.sendForm("service_gz5igu6", "template_jao6lyh", event.target, "user_9coErnt98IbJYjURIIR9L")
+      emailjs.sendForm("service_aht1vfo", "template_jao6lyh", event.target, "user_9coErnt98IbJYjURIIR9L")
         .then((res) => {
           toast.success('Nous accusons la bonne réception de votre message, vous aurez un retour rapidement.', { className:"toast__success" });
           setName("");
@@ -66,9 +66,10 @@ const Contact = () => {
       <section className="containerContact">
         <div className="formContainer">
           <p className="formTextContainer">Si vous souhaitez faire une réservation ou avoir plus d’information, contactez-nous :</p>
+          <p className="formTextContainer2">(Les mentions se terminant par * sont obligatoires.)</p>
           <form method="post" className="form" onSubmit={handleOnSubmit}>
               <label className="formLabel">
-                Nom
+                Nom*
               </label>
               <input
                 onChange={(e) => setName(e.target.value)}
@@ -80,7 +81,7 @@ const Contact = () => {
                 autoComplete="off"
               />
               <label className="formLabel">
-                Prénom
+                Prénom*
               </label>
               <input
                 onChange={(e) => setFirstName(e.target.value)}
@@ -104,7 +105,7 @@ const Contact = () => {
                 autoComplete="off"
               />
               <label className="formLabel">
-                Mail
+                Mail*
               </label>
               <input
                 onChange={(e) => setEmail(e.target.value)}
@@ -116,7 +117,7 @@ const Contact = () => {
                 size="60" 
               />
             <label className="formLabel">
-              Message
+              Message*
             </label>
             <textarea
               onChange={(e) => setMessage(e.target.value)}

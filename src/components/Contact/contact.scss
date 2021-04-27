@@ -11,8 +11,7 @@
     text-align: center;
     font-size: 1.7rem;
     color: vars.$secondary-color-more-dark;
-    padding-top: 3em;
-    margin-bottom: 1.5em;
+    margin: 3em 0;
   }
   .containerContact{
     .groupMapCameroun {
@@ -50,6 +49,12 @@
       .formTextContainer {
         font-family: 'SourceSansPro-Regular';
         // font-size: 1rem;
+        margin-bottom: .5em;
+        color: white;
+      }
+      .formTextContainer2 {
+        font-family: 'SourceSansPro-Regular';
+        font-size: .8rem;
         color: white;
         margin-bottom: 1.5em;
       }
@@ -115,10 +120,11 @@
     z-index: 1;
     .titleContact {
       text-align: left;
-      width: 80%;
+      margin-bottom: 1.5em;
+      width: 70%;
     }
     .containerContact{
-      width: 80%;
+      width: 70%;
       .groupMapCameroun {
         overflow: hidden;
         top: 0;
