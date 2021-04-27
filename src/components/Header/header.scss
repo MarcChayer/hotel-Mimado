@@ -133,10 +133,6 @@
   }
 }
 
-.logoMimado {
-  width: 225px;
-}
-
 @media screen and (max-width:1250px) {
   .navlink {
     &__one {
@@ -145,9 +141,22 @@
   }
 }
 
+.logoMimado {
+  width: 225px;
+}
+
+@media screen and (max-width:450px) {
+  .logoMimado {
+    width: 225px!important;
+  }
+}
+
 @media screen and (max-width:1130px) {
   .burger {
     display:block; 
+  }
+  .logoMimado {
+    width: 370px;
   }
 }
 
