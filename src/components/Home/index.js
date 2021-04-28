@@ -71,7 +71,7 @@ const Home = () => {
         <div className="maskLeafBananier">
           <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
         </div>
-        <div className="cardsHome">
+        <div className="cardsHome" style={{ transform: `translateY(-${offsetY * 0.2}px)` }}>
           <NavLink exact to="/hebergement" className="cardHome">
             <div className="cardLogo"><img src={lit} alt="icone hôtellerie"/></div>
             <p className="textCard">Hôtel et Commodités</p>

@@ -19,7 +19,7 @@ import Bananier from '../../assets/images/treeBanana.svg';
 const Prestation = () => (
   <div className="prestation">
     <Helmet defaultTitle="Hôtel Mimado">
-      <title>Hôtel Mimado - Prestation</title>
+      <title>Hôtel Mimado - Prestations</title>
       <meta
         name="description"
         content="L'Hôtel Mimado* vous propose un large choix de services et prestations personnalisés pour faire de votre séjour une expérience unique."
@@ -28,7 +28,7 @@ const Prestation = () => (
   <div className="maskLeafBananier">
     <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
   </div>
-  <h1 className="titlePrestation">prestation</h1>
+  <h1 className="titlePrestation">prestations</h1>
   <section className="firstBloc">
     <div className="containerSlide">
         <div className="each-slide">
@@ -60,7 +60,7 @@ const Prestation = () => (
     </div>
     <div className="paragraphSecondBloc">
       <h2 className="firstTextBloc">Événement et  plus</h2>
-      <p className="secondTextBloc">« Vous devez séjournez longtemps dans la région ? Ou vous organnisez un évenement ? »</p>
+      <p className="secondTextBloc">« Vous devez séjourner longtemps dans la région ? Ou vous organisez un évenement ? »</p>
       <p className="lastTextBloc">Pour vos activités actuelles ou futures dans la région de Kribi,  notre hôtel peut être mis à votre disposition pour des séminaires, des évènements ou pour une base de vie pour vos cadres et agents de maîtrises, travaillants dans notre région.</p>
     </div>
   </section>

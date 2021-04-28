@@ -35,7 +35,7 @@ const App = () => (
           <Route path="/restauration">
             <Restauration />
           </Route>
-          <Route path="/prestation">
+          <Route path="/prestations">
             <Prestation />
           </Route>
           <Route path="/activites">

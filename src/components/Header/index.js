@@ -47,7 +47,7 @@ const Header = () => {
             <NavLink to="/restauration"  activeClassName="navlink__one--active">restauration</NavLink>
           </li>
           <li className="navlink__one" onClick={handleOnClickCloseMenu}>
-            <NavLink to="/prestation"  activeClassName="navlink__one--active">prestations</NavLink>
+            <NavLink to="/prestations"  activeClassName="navlink__one--active">prestations</NavLink>
           </li>
           <li className="navlink__one" onClick={handleOnClickCloseMenu}>
             <NavLink to="/activites"  activeClassName="navlink__one--active">activités</NavLink>

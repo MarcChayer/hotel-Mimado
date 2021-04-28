@@ -17,6 +17,11 @@ const Footer = () => {
       behavior:"smooth"
     });
   }
+  const scrollToTopDirect = () => {
+    window.scrollTo({
+      top:0,
+    });
+  }
   return (
     <div className="footer">
       <section className="firstContainerFooter">
@@ -42,18 +47,18 @@ const Footer = () => {
         <nav className="containerFooterContact">
           <p className="titleFooter">Navigation</p>
           <ul className="groupNavFooter">
-            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/" onClick={window.scrollTo(0, 0)}>Accueil</NavLink></li>
-            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/hebergement" onClick={window.scrollTo(0, 0)}>Hébergement</NavLink></li>
-            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/restauration" onClick={window.scrollTo(0, 0)}>Restauration</NavLink></li>
-            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/prestation" onClick={window.scrollTo(0, 0)}>Prestation</NavLink></li>
-            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/activites" onClick={window.scrollTo(0, 0)}>Activités</NavLink></li>
-            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/contact" onClick={window.scrollTo(0, 0)}>Contact</NavLink></li>
+            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/" onClick={scrollToTopDirect}>Accueil</NavLink></li>
+            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/hebergement" onClick={scrollToTopDirect}>Hébergement</NavLink></li>
+            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/restauration" onClick={scrollToTopDirect}>Restauration</NavLink></li>
+            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/prestations" onClick={scrollToTopDirect}>Prestation</NavLink></li>
+            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/activites" onClick={scrollToTopDirect}>Activités</NavLink></li>
+            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/contact" onClick={scrollToTopDirect}>Contact</NavLink></li>
           </ul>
         </nav>
       </section>
       <div className="bottomFooter">
         <p className="textBottomFooter">
-          <NavLink exact to="/mentionslegales" activeClassName="textBottomFooter--active" onClick={window.scrollTo(0, 0)}>Mentions légales</NavLink>
+          <NavLink exact to="/mentionslegales" activeClassName="textBottomFooter--active" onClick={scrollToTopDirect}>Mentions légales</NavLink>
         </p>
         <p>© 2021 Hôtel Mimado</p>
       </div>
