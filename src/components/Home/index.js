@@ -47,36 +47,9 @@ const Home = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   
-  const useOnScreen= (options) => {
-    const ref = useRef();
-    const [visible, setVisible] = useState(false);
-
-    useEffect(() => {
-      const observer = new IntersectionObserver(([entry]) => {
-        setVisible(entry.isIntersecting);
-      }, options);
-
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
-
-      return () => {
-        if (ref.current) {
-          observer.unobserve(ref.current);
-        }
-      }
-    }, [ref, options])
-    
-    return [ref, visible];
-  }
-
-  const [ref, visible] = useOnScreen({
-    threshold: 0.1
-  })
   return (
     <div className="home">
       <Helmet defaultTitle="Hôtel Mimado">
@@ -93,39 +66,25 @@ const Home = () => {
         </div>
         <p className="secondText" style={{ transform: `translateY(-${offsetY * 0.2}px)` }}>Venez découvrir notre région sous un autre angle.</p>
       </section>
-      <section
-        className="secondContainer"
-        ref={ref}
-      >
+      <section className="secondContainer">
         <div className="maskLeafBananier">
           <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
         </div>
-          {
-            visible 
-            ?
-            <div className="cardsHome">
-              <NavLink exact to="/hebergement" className="cardHome">
-                <div className="cardLogo"><img src={lit} alt="icone hôtellerie"/></div>
-                <p className="textCard">Hôtel et Commodités</p>
-              </NavLink>
-              <NavLink exact to="/restauration" className="cardHome">
-                <div className="cardLogo"><img src={lunch} alt="icone restauration"/></div>
-                <p className="textCard">Restaurants et bars</p>
-              </NavLink>
-              <NavLink exact to="/activites" className="cardHome">
-                <div className="cardLogo"><img src={camera} alt="icone loisir"/></div>
-                <p className="textCard">Les activités autour du site</p>
-              </NavLink>
-            </div>
-            :
-            null
-          }
-        <div
-          className="firstBloc"
-          style={{
-            marginTop: visible ? "0" : "15em",
-          }}
-        >
+          <div className="cardsHome">
+            <NavLink exact to="/hebergement" className="cardHome">
+              <div className="cardLogo"><img src={lit} alt="icone hôtellerie"/></div>
+              <p className="textCard">Hôtel et Commodités</p>
+            </NavLink>
+            <NavLink exact to="/restauration" className="cardHome">
+              <div className="cardLogo"><img src={lunch} alt="icone restauration"/></div>
+              <p className="textCard">Restaurants et bars</p>
+            </NavLink>
+            <NavLink exact to="/activites" className="cardHome">
+              <div className="cardLogo"><img src={camera} alt="icone loisir"/></div>
+              <p className="textCard">Les activités autour du site</p>
+            </NavLink>
+          </div>
+        <div className="firstBloc">
           <div className="containerSlide">
             <Fade {...proprietes}>
               <div className="each-slide">

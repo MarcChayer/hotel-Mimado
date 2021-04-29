@@ -67,11 +67,8 @@
       align-items: center;
       margin: 3em 0;
       .cardHome {
-        animation: 2s moveCard;
-        animation-fill-mode: forwards;
         margin: 3em;
         position: relative;
-        bottom: -150px;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -306,7 +303,9 @@
         width: 100%;
         .cardHome {
           position: relative;
-          
+          animation: 4s moveCard;
+          bottom: -150px;
+          animation-fill-mode: forwards;
           display:flex;
           flex-direction: column;
           justify-content: center;
