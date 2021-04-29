@@ -107,7 +107,7 @@ const Home = () => {
           </div>
           <div className="paragraphFirstBloc">
             <p className="firstTextBloc">Un cadre idéal pour se ressourcer</p>
-            <p className="secondTextBloc">« Oublier un instant les tourments de nos vies citadines, c'est un véritable retour aux sources que nous vous proposons. »</p>
+            <p className="secondTextBloc">« Oubliez un instant les tourments de nos vies citadines, c'est un véritable retour aux sources que nous vous proposons. »</p>
             <p className="lastTextBloc">L’hébergement avec ou sans restauration est possible. En demi pension ou pension complète, tout est possible chez Mimado.</p>
             <a href="/hebergement"><button className="buttonBloc">En savoir plus</button></a>
           </div>
