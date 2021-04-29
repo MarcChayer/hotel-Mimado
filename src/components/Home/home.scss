@@ -1,5 +1,14 @@
 @use 'src/styles/vars';
 
+@keyframes moveCard {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-124px);
+  }
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -56,6 +65,8 @@
       align-items: center;
       margin: 3em 0;
       .cardHome {
+        animation: 2s moveCard;
+        animation-fill-mode: forwards;
         margin: 3em;
         position: relative;
         display:flex;
@@ -291,7 +302,7 @@
         width: 100%;
         .cardHome {
           position: relative;
-          top: -124px;
+          
           display:flex;
           flex-direction: column;
           justify-content: center;
