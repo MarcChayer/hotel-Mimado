@@ -3,9 +3,11 @@
 @keyframes moveCard {
   0% {
     transform: translateY(0);
+    opacity: 0;
   }
   100% {
-    transform: translateY(-124px);
+    transform: translateY(-274px);
+    opacity: 1;
   }
 }
 
@@ -69,6 +71,7 @@
         animation-fill-mode: forwards;
         margin: 3em;
         position: relative;
+        bottom: -150px;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -77,6 +80,7 @@
         border-radius: 2vh;
         width: 13em;
         height: 9em;
+        z-index: 2;
         .cardLogo {
           position: absolute;
           top: -60px;

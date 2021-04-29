@@ -75,7 +75,6 @@ const Home = () => {
   }
 
   const [ref, visible] = useOnScreen({
-    // rootMargin:"1px",
     threshold: 0.1
   })
   return (
@@ -124,7 +123,7 @@ const Home = () => {
         <div
           className="firstBloc"
           style={{
-            marginTop: visible ? "0" : "10em",
+            marginTop: visible ? "0" : "15em",
           }}
         >
           <div className="containerSlide">
