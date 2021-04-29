@@ -86,7 +86,6 @@
   align-items: center;
   padding: 1.5em;
   background-color: transparent;
-  position: absolute;
   width: 100%;
 }
 
@@ -169,7 +168,6 @@
   }
 
   .header--onHome {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -183,6 +181,9 @@
     background-color: vars.$primary-color;
   }
 
+  .navlinks {
+  }
+  
   .navlink {
     &__mobile {
       display: none

@@ -50,7 +50,7 @@ const Footer = () => {
             <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/" onClick={scrollToTopDirect}>Accueil</NavLink></li>
             <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/hebergement" onClick={scrollToTopDirect}>Hébergement</NavLink></li>
             <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/restauration" onClick={scrollToTopDirect}>Restauration</NavLink></li>
-            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/prestations" onClick={scrollToTopDirect}>Prestation</NavLink></li>
+            <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/prestations" onClick={scrollToTopDirect}>Prestations</NavLink></li>
             <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/activites" onClick={scrollToTopDirect}>Activités</NavLink></li>
             <li className="oneFooterContact"><NavLink activeClassName="oneFooterContact--active" exact to="/contact" onClick={scrollToTopDirect}>Contact</NavLink></li>
           </ul>

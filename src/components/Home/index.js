@@ -71,7 +71,7 @@ const Home = () => {
         <div className="maskLeafBananier">
           <img className="leafBananier" src={feuilleBananier} alt="Image de fond représentant une feuille de bananier."/>
         </div>
-        <div className="cardsHome" style={{ transform: `translateY(-${offsetY * 0.2}px)` }}>
+        <div className="cardsHome">
           <NavLink exact to="/hebergement" className="cardHome">
             <div className="cardLogo"><img src={lit} alt="icone hôtellerie"/></div>
             <p className="textCard">Hôtel et Commodités</p>
@@ -107,7 +107,7 @@ const Home = () => {
           </div>
           <div className="paragraphFirstBloc">
             <p className="firstTextBloc">Un cadre idéal pour se ressourcer</p>
-            <p className="secondTextBloc">« Oublié un instant les tourments de nos vies citadines, c'est un véritable retour aux sources que nous vous proposons. »</p>
+            <p className="secondTextBloc">« Oublier un instant les tourments de nos vies citadines, c'est un véritable retour aux sources que nous vous proposons. »</p>
             <p className="lastTextBloc">L’hébergement avec ou sans restauration est possible. En demi pension ou pension complète, tout est possible chez Mimado.</p>
             <a href="/hebergement"><button className="buttonBloc">En savoir plus</button></a>
           </div>

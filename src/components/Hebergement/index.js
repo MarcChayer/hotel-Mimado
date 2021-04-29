@@ -71,7 +71,7 @@ const Hebergement = () => (
     </section>
     <section className="secondBloc">
       <div className="cardHebergement">
-        <p className="cardTitle">Chambres comprenants</p>
+        <p className="cardTitle">Chambres comprenant</p>
         <div className="cardGroupPicture">
         <img className="onePictureCard" src={icone2} alt="Logo représentant un ventilateur"/>
           <img className="onePictureCard--wifi" src={icone3} alt="Logo représentant le WIFI"/>
@@ -84,7 +84,7 @@ const Hebergement = () => (
         <p className="priceRoom">Prix: <span>18000 CFA</span> ou <span>28€</span></p>
       </div>
       <div className="cardHebergement">
-        <p className="cardTitle">Chambres comprenants</p>
+        <p className="cardTitle">Chambres comprenant</p>
         <div className="cardGroupPicture">
           <img className="onePictureCard" src={icone2} alt="Logo représentant un ventilateur"/>
           <img className="onePictureCard--wifi" src={icone3} alt="Logo représentant le WIFI"/>
@@ -99,7 +99,7 @@ const Hebergement = () => (
         <p className="priceRoom">Prix: <span>20000 CFA</span> ou <span>30€</span></p>
       </div>
       <div className="cardHebergement">
-        <p className="cardTitle">Chambres comprenants</p>
+        <p className="cardTitle">Chambres comprenant</p>
         <div className="cardGroupPicture">
           <img className="onePictureCard" src={icone1} alt="Logo représentant un climatiseur"/>
           <img className="onePictureCard--wifi" src={icone3} alt="Logo représentant le WIFI"/>

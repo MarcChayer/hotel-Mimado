@@ -35,7 +35,7 @@ const Header = () => {
           <span></span>
         </div>
       <NavLink exact to="/"><img className="logoMimado" src={ mimado } alt="Logo de l'hôtel Mimado"/></NavLink>
-      <nav className="navlink">
+      <nav className="navlinks">
         <ul className={`navlink${showBurgerMenu ? "__mobile" : "__desktop"}`}>
           <li className="navlink__one" onClick={handleOnClickCloseMenu}>
             <NavLink exact to="/"  activeClassName="navlink__one--active">accueil</NavLink>

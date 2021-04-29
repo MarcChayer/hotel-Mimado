@@ -61,7 +61,7 @@ const Prestation = () => (
     <div className="paragraphSecondBloc">
       <h2 className="firstTextBloc">Événement et  plus</h2>
       <p className="secondTextBloc">« Vous devez séjourner longtemps dans la région ? Ou vous organisez un évenement ? »</p>
-      <p className="lastTextBloc">Pour vos activités actuelles ou futures dans la région de Kribi,  notre hôtel peut être mis à votre disposition pour des séminaires, des évènements ou pour une base de vie pour vos cadres et agents de maîtrises, travaillants dans notre région.</p>
+      <p className="lastTextBloc">Pour vos activités actuelles ou futures dans la région de Kribi, notre hôtel peut être mis à votre disposition pour des séminaires, des évènements ou pour une base de vie pour vos cadres et agents de maîtrises, travaillant dans notre région.</p>
     </div>
   </section>
   <div className="blocBananier">
