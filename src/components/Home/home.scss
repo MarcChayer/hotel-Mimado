@@ -11,6 +11,12 @@
   }
 }
 
+// reglage bouton slideshow de tt le site
+.react-slideshow-container .default-nav {
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.657);
+}
+
 .home {
   display: flex;
   flex-direction: column;
