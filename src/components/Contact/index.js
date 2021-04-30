@@ -17,7 +17,6 @@ const Contact = () => {
   toast.configure();
 
   const [name, setName] = useState("");
-  const [firstName, setFirstName] = useState("");
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -34,18 +33,17 @@ const Contact = () => {
   const handleOnSubmit = (event) => {
     event.preventDefault();
     // verification des inputs
-    if (name && firstName && message && isEmail()) {
+    if (name  && message && isEmail()) {
       emailjs.sendForm("service_aht1vfo", "template_jao6lyh", event.target, "user_9coErnt98IbJYjURIIR9L")
         .then((res) => {
           toast.success('Nous accusons la bonne réception de votre message, vous aurez un retour rapidement.', { className:"toast__success" });
           setName("");
-          setFirstName("");
           setCompany("");
           setEmail("");
           setMessage("");
         });
     } 
-    if (!name || !firstName || !message) {
+    if (!name || !message) {
       toast.error('Tous les champs du formulaire sont obligatoires, mis à part celui de l\'entreprise.', { className:"toast__error" });
     } else if (!isEmail()) {
       toast.error('Votre adresse mail ne semble pas valide, rentrer une adresse valide.', { className:"toast__error" });
@@ -68,26 +66,14 @@ const Contact = () => {
           <p className="formTextContainer2">(Les champs marqués d'un astérisque (*) sont obligatoires.)</p>
           <form method="post" className="form" onSubmit={handleOnSubmit}>
               <label className="formLabel">
-                Nom*
+                Nom complet*
               </label>
               <input
                 onChange={(e) => setName(e.target.value)}
                 type="text"
                 name="name"
                 value={name}
-                placeholder="Votre nom"
-                className="formInput"
-                autoComplete="off"
-              />
-              <label className="formLabel">
-                Prénom*
-              </label>
-              <input
-                onChange={(e) => setFirstName(e.target.value)}
-                type="text"
-                name="firstName"
-                value={firstName}
-                placeholder="Votre prénom"
+                placeholder="Votre prénom et nom"
                 className="formInput"
                 autoComplete="off"
               />
