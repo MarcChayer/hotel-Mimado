@@ -171,7 +171,6 @@
       background-color: vars.$secondary-color-light;
       width: 100%;
       padding: 2.5em 1.5em;
-      margin-bottom: 4em;
       .titleInfo {
         font-family: 'Lora-Regular';
         font-size: 2rem;
@@ -184,7 +183,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        height: 50vh;
+        height: 60vh;
         .cercleInfo {
           width: 10px;
           height: 10px;
@@ -406,7 +405,7 @@
         }
         .groupInfos {
           justify-content: center;
-          height: 25vh;
+          height: 100%;
           .cercleInfoMiddle {
             width: 10px;
             height: 10px;
