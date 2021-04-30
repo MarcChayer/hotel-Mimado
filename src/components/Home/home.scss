@@ -136,9 +136,9 @@
           margin-bottom: 2em;
         }
         .buttonBloc {
-          width: 180px;
+          width: 150px;
           font-family: 'SourceSansPro-Regular';
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           padding: 0.5em;
           color: vars.$secondary-color-dark;
           background-color: transparent;
@@ -238,26 +238,23 @@
           font-size: 1.5rem;
           color: vars.$secondary-color-dark;
           margin-bottom: 1em;
-          text-align: right;
         }
         .secondTextBloc2 {
           font-family: 'SourceSansPro-LightItalic';
           font-size: 1.25rem;
           color: vars.$secondary-color-more-dark;
           margin-bottom: 1em;
-          text-align: right;
         }
         .lastTextBloc {
           font-family: 'SourceSansPro-Light';
           font-size: 1.1rem;
           color: vars.$primary-color;
           margin-bottom: 2em;
-          text-align: right;
         }
         .buttonBloc {
-          width: 180px;
+          width: 150px;
           font-family: 'SourceSansPro-Regular';
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           padding: 0.5em;
           color: vars.$secondary-color-dark;
           background-color: transparent;
@@ -269,8 +266,7 @@
           }
         }
         a {
-          width: 180px;
-          align-self: flex-end;
+          align-self: flex-start;
         }
       }
     }
