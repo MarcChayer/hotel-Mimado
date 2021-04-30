@@ -34,7 +34,6 @@ const Footer = () => {
             <img className="contactLogoFooter" src={mobile} alt="Logo représentant un téléphone portable."/>  
             <div className="groupFooterContact">
               <a href="tel:0023799877593" className="oneFooterContact">(00237) 99 87 75 93</a>
-              <a href="tel:0023799997917" className="oneFooterContact">(00237) 99 99 79 17</a>
             </div>
           </div>
           <div className="contactNumberFooter">

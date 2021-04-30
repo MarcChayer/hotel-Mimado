@@ -2,10 +2,10 @@
 
 @keyframes moveArrow {
   0% {
-    transform: translateY(5px);
+    transform: translateY(2.5px);
   }
   100% {
-    transform: translateY(-5px);
+    transform: translateY(-2.5px);
   }
 }
 
@@ -28,12 +28,14 @@
       right : 25px;
       top: -25px;
       z-index: 2;
-      animation: 1.5s moveArrow .5s infinite alternate;
       &:hover {
         background-color: vars.$secondary-color-more-dark;
       }
       img {
         width: 30px;
+        &:hover {
+          animation: moveArrow .8s infinite alternate;
+        }
       }
     }
     .containerFooterContact {
@@ -60,6 +62,7 @@
           .oneFooterContact {
             font-family: 'SourceSansPro-Light';
             font-size: 1.3rem;
+            line-height: 1.8rem;
             &:hover {
               color: vars.$secondary-color-dark;
               transition: 1s;
@@ -74,7 +77,7 @@
         .oneFooterContact {
           font-family: 'SourceSansPro-Light';
           font-size: 1.3rem;
-          line-height: 1.2em;
+          line-height: 1.8rem;
           &--active {
             color: vars.$secondary-color-dark;
           }
