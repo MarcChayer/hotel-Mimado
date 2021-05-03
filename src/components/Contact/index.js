@@ -66,7 +66,7 @@ const Contact = () => {
           <p className="formTextContainer2">(Les champs marqués d'un astérisque (*) sont obligatoires.)</p>
           <form method="post" className="form" onSubmit={handleOnSubmit}>
               <label className="formLabel">
-                Nom complet*
+                Prénom et nom*
               </label>
               <input
                 onChange={(e) => setName(e.target.value)}
