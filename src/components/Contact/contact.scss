@@ -48,15 +48,34 @@
       z-index: 5;
       .formTextContainer {
         font-family: 'SourceSansPro-Regular';
-        // font-size: 1rem;
         margin-bottom: .5em;
         color: white;
       }
       .formTextContainer2 {
         font-family: 'SourceSansPro-Regular';
-        font-size: .8rem;
+        font-size: .9rem;
         color: white;
         margin-bottom: 1.5em;
+      }
+      #mailError {
+        display: none;
+        font-family: 'SourceSansPro-Regular';
+        font-size: .9rem;
+        color: white;
+        margin-bottom: 1.5em;
+        text-align: center;
+        padding: .5em .5em;
+        background-color: #e74c3d;
+      }
+      #succesSubmit {
+        display: none;
+        font-family: 'SourceSansPro-Regular';
+        font-size: .9rem;
+        color: white;
+        margin-bottom: 1.5em;
+        text-align: center;
+        padding: .5em .5em;
+        background-color: #07bc0d;
       }
       .form {
         display: flex;
@@ -79,6 +98,14 @@
           border: none;
           &::placeholder {
             color: vars.$primary-color;
+          }
+        }
+        .required {
+          border: 3px solid #e74c3d;
+          background-color: #ec8479;
+          transition: .5s;
+          &::placeholder {
+            color: white;
           }
         }
         textarea {

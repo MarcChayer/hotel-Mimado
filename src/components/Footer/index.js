@@ -39,7 +39,7 @@ const Footer = () => {
           <div className="contactNumberFooter">
             <img className="contactLogoFooter" src={earth} alt="logo représentant une localisation GPS."/> 
             <div className="groupFooterContact"> 
-              <a href="https://www.google.fr/maps/place/2%C2%B050'14.5%22N+9%C2%B053'07.3%22E/@2.8356543,9.8849632,883m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d2.8373611!4d9.8853611" className="oneFooterContact" target="_blank" rel="noopener">Hôtel Mimado<br/>Bongahélé GrandBatanga II Kribi</a>
+              <a href="https://www.google.com/maps/place/Mimado+Hotel/@2.8370157,9.8851988,620m/data=!3m1!1e3!4m8!3m7!1s0x0:0xb11638e8e9405bbf!5m2!4m1!1i2!8m2!3d2.8373945!4d9.8851955" className="oneFooterContact" target="_blank" rel="noopener">Hôtel Mimado<br/>Bongahélé GrandBatanga II Kribi</a>
             </div>
           </div>
         </div>
