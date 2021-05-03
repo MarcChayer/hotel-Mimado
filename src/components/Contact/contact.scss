@@ -56,14 +56,16 @@
         font-size: .9rem;
         color: white;
         margin-bottom: 1.5em;
+        width: auto;
+        align-self: flex-start;
       }
       #mailError {
         display: none;
         font-family: 'SourceSansPro-Regular';
         font-size: .9rem;
         color: white;
-        margin-bottom: 1.5em;
-        text-align: center;
+        margin-bottom: .5em;
+        align-self: flex-start;
         padding: .5em .5em;
         background-color: #e74c3d;
       }
@@ -73,9 +75,9 @@
         font-size: .9rem;
         color: white;
         margin-bottom: 1.5em;
-        text-align: center;
+        align-self: flex-start;
         padding: .5em .5em;
-        background-color: #07bc0d;
+        background-color: #509752;
       }
       .form {
         display: flex;
@@ -102,10 +104,10 @@
         }
         .required {
           border: 3px solid #e74c3d;
-          background-color: #ec8479;
+          background-color: #white;
           transition: .5s;
           &::placeholder {
-            color: white;
+            color: #e74c3d;
           }
         }
         textarea {
