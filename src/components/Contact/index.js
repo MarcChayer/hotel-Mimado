@@ -106,6 +106,8 @@ const Contact = () => {
               id="name"
               maxlength="45"
               autoComplete="off"
+              pattern="[a-zA-Z]+"
+              title="Seul les caractères alphabétiques sont acceptés."
             />
             <label className="formLabel">
               Entreprise
