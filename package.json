@@ -55,6 +55,8 @@
   },
   "dependencies": {
     "emailjs-com": "^2.6.4",
+    "node-fetch": "^2.6.1",
+    "postcss": "^8.2.10",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
