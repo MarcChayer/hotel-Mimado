@@ -1,0 +1,208 @@
+@use 'src/styles/vars';
+
+@keyframes animBurger {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0vh);
+    opacity: 1;
+  }
+}
+
+// burger animation
+.burger {
+  display:none; 
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 1.5em;
+  z-index: 98;
+}
+
+.burger.active {
+  position: fixed;
+}
+
+.burger span {
+  display :block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.burger span::before, .burger span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.burger span::before {
+  transform: translateY(-10px);
+}
+
+.burger span::after {
+  transform: translateY(10px);
+}
+
+
+.burger.active span {
+  background-color: transparent;
+}
+
+.burger.active span::before {
+  transform: translateY(0px) rotate(45deg);
+  
+}
+
+.burger.active span::after {
+  transform: translateY(0px) rotate(-45deg);
+}
+
+// nav 
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.header--onHome {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  background-color: transparent;
+  width: 100%;
+}
+
+.header--other {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  background-color: vars.$primary-color;
+}
+
+.navlink {
+  &__mobile {
+    position: fixed;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: vars.$primary-color;
+    animation: animBurger 2s;
+  }
+  &__desktop {
+    display: none;
+  }
+  &__one {
+    font-family: 'SourceSansPro-SemiBold';
+    font-size: 1.25em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0px 2px 2px rgb(0 0 0 / 40%), 0px 3px 3px rgb(0 0 0 / 10%), 0px 3px 3px rgb(0 0 0 / 10%);
+    margin-bottom: 3em;
+    &--active {
+      color: vars.$secondary-color-more-dark;
+      text-shadow: none;
+    }
+    &:hover {
+      color: vars.$secondary-color-more-dark;
+      transition: 1s;
+    }
+  }
+}
+
+@media screen and (max-width:1250px) {
+  .navlink {
+    &__one {
+      font-size: 1.1em;
+    }
+  }
+}
+
+.logoMimado {
+  width: 225px;
+}
+
+@media screen and (max-width:450px) {
+  .logoMimado {
+    width: 225px!important;
+  }
+}
+
+@media screen and (max-width:1130px) {
+  .burger {
+    display:block; 
+  }
+  .logoMimado {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width:1130px) {
+  .header {
+    justify-content: space-between;
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .header--onHome {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .header--other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    background-color: vars.$primary-color;
+  }
+
+  .navlinks {
+  }
+  
+  .navlink {
+    &__mobile {
+      display: none
+    }
+    &__desktop {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__one {
+      margin: 0 1.5em 0 1.5em;
+    }
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  .burger {
+    display:none; 
+  }
+}

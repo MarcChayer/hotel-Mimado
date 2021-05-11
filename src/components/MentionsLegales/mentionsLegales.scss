@@ -1,0 +1,74 @@
+@use 'src/styles/vars';
+
+.mentionsLegales {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  .maskLeafBananier {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    .leafBananier {
+      position: absolute;
+      width: 30rem;
+      top: -90px;
+      right: -60px;
+      z-index: -1;
+    }
+  }
+  .paragrapheMention {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 1.5em;
+    width: 90%;
+    height: 100%;
+    .titleMentions {
+      font-family: 'Lora-Regular';
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      color: vars.$secondary-color-more-dark;
+      margin-bottom: 3em;
+      text-align: center;
+    }
+    .textMentions {
+      font-family: 'SourceSansPro-Regular';
+      color: vars.$primary-color;
+      font-size: 1.1rem;
+    }
+    .textMentions--margB {
+      font-family: 'SourceSansPro-Regular';
+      color: vars.$primary-color;
+      margin-bottom: 1em;
+      font-size: 1.1rem;
+    }
+    .titleParaMentions {
+      font-family: 'SourceSansPro-SemiBold';
+      font-size: 1.2rem;
+      margin-bottom: .5em;
+      color: vars.$primary-color;
+    }
+  }
+}
+
+@media screen and (min-width:850px) {
+  .mentionsLegales {
+    .paragrapheMention {
+      .titleMentions {
+        text-align: left;
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:2560px) {
+  .mentionsLegales {
+    height: 100%;
+    .paragrapheMention {
+      height:70vh;
+    }
+  }
+}

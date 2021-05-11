@@ -1,0 +1,183 @@
+@use 'src/styles/vars';
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: white;
+  .titleContact {
+    font-family: 'Lora-Regular';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.7rem;
+    color: vars.$secondary-color-more-dark;
+    margin: 3em 0;
+  }
+  .containerContact{
+    .groupMapCameroun {
+      overflow: hidden;
+      width: 100%;
+      height: 60vh;
+      position: relative;
+      .mapCamerounGradient {
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient(white, #ffffff00);
+        width: 100%;
+        height: 60px;
+      }
+      .mapCamerounGradientBottom {
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(#ffffff00, white);
+        width: 100%;
+        height: 80px;
+      }
+      .mapCameroun {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 135%;
+      }
+    }
+    .formContainer {
+      display: flex;
+      flex-direction: column;
+      background-color: vars.$primary-color;
+      padding: 2.5em 1.5em;
+      z-index: 5;
+      .formTextContainer {
+        font-family: 'SourceSansPro-Regular';
+        margin-bottom: .5em;
+        color: white;
+      }
+      .formTextContainer2 {
+        font-family: 'SourceSansPro-Regular';
+        font-size: .9rem;
+        color: white;
+        margin-bottom: 1.5em;
+        width: auto;
+        align-self: flex-start;
+      }
+      #mailError {
+        display: none;
+        font-family: 'SourceSansPro-Regular';
+        font-size: .9rem;
+        color: white;
+        margin-bottom: .5em;
+        align-self: flex-start;
+        padding: .5em .5em;
+        background-color: #e74c3d;
+        margin-bottom: .8em;      
+      }
+      #succesSubmit {
+        display: none;
+        font-family: 'SourceSansPro-Regular';
+        font-size: .9rem;
+        color: white;
+        margin-bottom: 1.5em;
+        align-self: flex-start;
+        padding: .5em .5em;
+        background-color: #509752;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .formLabel {
+          font-family: 'SourceSansPro-Regular';
+          color: white;
+          margin-bottom: .8em;
+          text-align: left;
+          width: 100%;
+        }
+        .formInput {
+          font-family: 'SourceSansPro-Regular';
+          color: vars.$primary-color;
+          height: 2.5em;
+          width: 100%;
+          padding: .5em 1em;
+          margin-bottom: 1em;
+          border: none;
+          &::placeholder {
+            color: vars.$primary-color;
+          }
+        }
+        .required {
+          border: 3px solid #e74c3d;
+          background-color: #white;
+          transition: .5s;
+          &::placeholder {
+            color: #e74c3d;
+          }
+        }
+        textarea {
+          min-height: 180px;
+          max-height: 450px;
+          min-width: 100%;
+          max-width: 100%;
+          border: none;
+          margin-bottom: 3em!important;
+          color: vars.$primary-color;
+          &::placeholder {
+            color: vars.$primary-color;
+          }
+        }
+        .formSubmit {
+          font-family: 'SourceSansPro-Bold';
+          background-color: vars.$secondary-color-dark;
+          color: white;
+          border: none;
+          height: 40px;
+          width: 100px;
+          &:hover {
+            background-color: vars.$secondary-color-more-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:850px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    .titleContact {
+      text-align: left;
+      margin-bottom: 1.5em;
+      width: 70%;
+    }
+    .containerContact{
+      width: 70%;
+      .groupMapCameroun {
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        .mapCamerounGradient {
+          display: none;
+        }
+        .mapCamerounGradientBottom {
+          display: none;
+        }
+        .mapCameroun {
+          position: absolute;
+          height: 100%;
+        }
+      }
+      .formContainer {
+        width: 60%;
+        margin-bottom: 5em;
+      }
+    }
+  }
+}
