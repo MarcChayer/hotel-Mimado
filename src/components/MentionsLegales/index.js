@@ -25,11 +25,6 @@ const MentionsLegales = () => (
       <h2 className="titleParaMentions">Directrice :</h2>
       <p className="textMentions">Michéle Lobe-Manga</p>
       <p className="textMentions--margB">mimadohotel@gmail.com</p>
-      <p className="textMentions">Siège social : </p>
-      <p className="textMentions--margB">URL du site : mimadohotel.com</p>
-      <p className="textMentions">Numéro d'inscription au registre de commerce et des société : 38848113700023</p>
-      <p className="textMentions">Numéro de TVA INTRACOMMUNAUTAIRE : FR63388481137</p>
-      <p className="textMentions--margB">Forme juridique :</p>
       <h2 className="titleParaMentions">Propriété</h2>
       <p className="textMentions--margB">Hôtel Mimado et son nom de domaine mimadohotel.com sont la propriété totale et exclusive de la société.</p>
       <h2 className="titleParaMentions">Clause de propriété intellectuelle</h2>

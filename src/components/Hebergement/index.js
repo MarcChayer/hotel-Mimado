@@ -10,6 +10,8 @@ import './hebergement.scss';
 import photo1 from '../../assets/images/hebergement/heber2.jpg';
 import photo2 from '../../assets/images/hebergement/heber1.jpg'; 
 import photo3 from '../../assets/images/hebergement/heber3.jpg';
+import photo4 from '../../assets/images/hebergement/heber4.jpg';
+
 
 // == Import images icone
 import feuilleBananier from '../../assets/images/leafBanana.svg';
@@ -59,6 +61,11 @@ const Hebergement = () => (
           <div className="each-slide">
             <div>
               <img className="slideImage" src={photo3} alt="Photo de chambre"/>
+            </div>
+          </div>
+          <div className="each-slide">
+            <div>
+              <img className="slideImage" src={photo4} alt="Photo de chambre"/>
             </div>
           </div>
         </Fade>

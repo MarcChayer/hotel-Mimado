@@ -122,19 +122,19 @@ const Home = () => {
             <div className="oneInfo">
               <img className="logoInfo" src={timeHotel} alt="Icone d'horloge représentant les horaires de départ et d'arrivée."/>
               <h3 className="oneTitleInfo">horaire</h3>
-              <p className="oneTextInfo">Arrivée: 07:00 - 20:00</p>
-              <p className="oneTextInfo">Départ: 12:00 - 16:00</p>
+              <p className="oneTextInfo">Arrivée : 07:00 - 20:00</p>
+              <p className="oneTextInfo">Départ : 12:00 - 16:00</p>
             </div>
             <span className="cercleInfo"></span>
             <div className="oneInfo">
               <img className="logoInfo" src={table} alt="Icone d'une table informant sur le prix du dejeuner."/>
-              <h3 className="oneTitleInfo">dejeuner</h3>
-              <p className="oneTextInfo">Petit déjeuner</p>
-              <p className="oneTextInfo">pour 2500 à 3500 CFA.</p>
+              <h3 className="oneTitleInfo">restaurant</h3>
+              <p className="oneTextInfo">Ouverture le midi tous les jours</p>
+              <p className="oneTextInfo">Le soir uniquement sur réservation</p>
             </div>
             <span className="cercleInfoMiddle"></span>
             <div className="oneInfo">
-              <img className="logoInfo" src={animaux} alt="Icone représentant l'acceptation des animaux de compagnies.'"/>
+              <img className="logoInfo" src={animaux} alt="Icone représentant l'acceptation des animaux de compagnies."/>
               <h3 className="oneTitleInfo">animaux</h3>
               <p className="oneTextInfo">Animaux de</p>
               <p className="oneTextInfo">compagnie acceptés</p>

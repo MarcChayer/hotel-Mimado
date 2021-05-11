@@ -70,7 +70,7 @@ const Restauration = () => (
     </div>
     <div className="paragraphFirstBloc">
       <h2 className="firstTextBloc">Notre restaurant</h2>
-      <p className="secondTextBloc">« Venez vous régaler et réveiller vos papilles. Nous vous serviront dans une ambiance conviviale des plats Français, Camerounais, Pakistanais, ainsi que de délicieux poissons grillés fraîchement pêchés pour vous. »</p>
+      <p className="secondTextBloc">« Venez vous régaler et réveiller vos papilles. Nous vous serviront dans une ambiance conviviale des plats Français, Camerounais, ainsi que de délicieux poissons grillés fraîchement pêchés pour vous. »</p>
       <p className="lastTextBloc">Que ce soit au restaurant de la plage, les pieds dans le sable, ou au restaurant couvert, une cuisine exotique vous accueillera.</p>
     </div>
   </section>
@@ -97,16 +97,6 @@ const Restauration = () => (
             <img className="slideImage" src={photo7} alt="La plage du restaurant."/>
           </div>
         </div>
-        {/* <div className="each-slide">
-          <div>
-            <img className="slideImage" src={photo8} alt="Photo de l'hôtel"/>
-          </div>
-        </div>
-        <div className="each-slide">
-          <div>
-            <img className="slideImage" src={photo9} alt="Photo aérienne de l'hôtel"/>
-          </div>
-        </div> */}
       </Fade>
     </div>
     <div className="paragraphSecondBloc">
