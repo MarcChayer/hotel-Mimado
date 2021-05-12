@@ -33,7 +33,8 @@ const Footer = () => {
           <div className="contactNumberFooter">
             <img className="contactLogoFooter" src={mobile} alt="Logo représentant un téléphone portable."/>  
             <div className="groupFooterContact">
-              <a href="tel:0023799877593" className="oneFooterContact">(00237) 99 87 75 93</a>
+              <a href="tel:0023799877593" className="oneFooterContact">(00237) 651 160 446</a>
+              <a href="tel:0023799877593" className="oneFooterContact">(00237) 699 877 593</a>
             </div>
           </div>
           <div className="contactNumberFooter">
